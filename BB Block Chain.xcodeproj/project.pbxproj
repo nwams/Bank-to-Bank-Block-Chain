@@ -14,6 +14,14 @@
 		E885BF4F1BB8C52400E6299A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E885BF4D1BB8C52400E6299A /* LaunchScreen.storyboard */; };
 		E885BF5A1BB8C52400E6299A /* BB_Block_ChainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF591BB8C52400E6299A /* BB_Block_ChainTests.swift */; };
 		E885BF651BB8C52400E6299A /* BB_Block_ChainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF641BB8C52400E6299A /* BB_Block_ChainUITests.swift */; };
+		E885BF731BB8C87900E6299A /* screenshots in Resources */ = {isa = PBXBuildFile; fileRef = E885BF721BB8C87900E6299A /* screenshots */; settings = {ASSET_TAGS = (); }; };
+		E885BF791BB8EC2700E6299A /* lock_white_red2.png in Resources */ = {isa = PBXBuildFile; fileRef = E885BF781BB8EC2700E6299A /* lock_white_red2.png */; settings = {ASSET_TAGS = (); }; };
+		E885BF7B1BB8ECFC00E6299A /* email_white_red.png in Resources */ = {isa = PBXBuildFile; fileRef = E885BF7A1BB8ECFC00E6299A /* email_white_red.png */; settings = {ASSET_TAGS = (); }; };
+		E885BF7D1BB8EE0E00E6299A /* username_white_red.png in Resources */ = {isa = PBXBuildFile; fileRef = E885BF7C1BB8EE0E00E6299A /* username_white_red.png */; settings = {ASSET_TAGS = (); }; };
+		E885BF7F1BB8F6D700E6299A /* IMG_2987.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E885BF7E1BB8F6D700E6299A /* IMG_2987.PNG */; settings = {ASSET_TAGS = (); }; };
+		E885BF811BB8FD0100E6299A /* IMG_2987 copy.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E885BF801BB8FD0100E6299A /* IMG_2987 copy.PNG */; settings = {ASSET_TAGS = (); }; };
+		E885BF851BB9A57A00E6299A /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF841BB9A57A00E6299A /* RegisterPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E885BF871BBA10B800E6299A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF861BBA10B800E6299A /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		E885BF601BB8C52400E6299A /* BB Block ChainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BB Block ChainUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E885BF641BB8C52400E6299A /* BB_Block_ChainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BB_Block_ChainUITests.swift; sourceTree = "<group>"; };
 		E885BF661BB8C52400E6299A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E885BF721BB8C87900E6299A /* screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = screenshots; sourceTree = "<group>"; };
+		E885BF781BB8EC2700E6299A /* lock_white_red2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock_white_red2.png; sourceTree = "<group>"; };
+		E885BF7A1BB8ECFC00E6299A /* email_white_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email_white_red.png; sourceTree = "<group>"; };
+		E885BF7C1BB8EE0E00E6299A /* username_white_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = username_white_red.png; sourceTree = "<group>"; };
+		E885BF7E1BB8F6D700E6299A /* IMG_2987.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_2987.PNG; path = screenshots/IMG_2987.PNG; sourceTree = "<group>"; };
+		E885BF801BB8FD0100E6299A /* IMG_2987 copy.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "IMG_2987 copy.PNG"; path = "screenshots/IMG_2987 copy.PNG"; sourceTree = "<group>"; };
+		E885BF841BB9A57A00E6299A /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		E885BF861BBA10B800E6299A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,12 @@
 				E885BF581BB8C52400E6299A /* BB Block ChainTests */,
 				E885BF631BB8C52400E6299A /* BB Block ChainUITests */,
 				E885BF421BB8C52400E6299A /* Products */,
+				E885BF781BB8EC2700E6299A /* lock_white_red2.png */,
+				E885BF7A1BB8ECFC00E6299A /* email_white_red.png */,
+				E885BF7C1BB8EE0E00E6299A /* username_white_red.png */,
+				E885BF7E1BB8F6D700E6299A /* IMG_2987.PNG */,
+				E885BF801BB8FD0100E6299A /* IMG_2987 copy.PNG */,
+				E885BF721BB8C87900E6299A /* screenshots */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +125,8 @@
 				E885BF4B1BB8C52400E6299A /* Assets.xcassets */,
 				E885BF4D1BB8C52400E6299A /* LaunchScreen.storyboard */,
 				E885BF501BB8C52400E6299A /* Info.plist */,
+				E885BF841BB9A57A00E6299A /* RegisterPageViewController.swift */,
+				E885BF861BBA10B800E6299A /* LoginViewController.swift */,
 			);
 			path = "BB Block Chain";
 			sourceTree = "<group>";
@@ -228,9 +252,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E885BF731BB8C87900E6299A /* screenshots in Resources */,
+				E885BF791BB8EC2700E6299A /* lock_white_red2.png in Resources */,
+				E885BF7D1BB8EE0E00E6299A /* username_white_red.png in Resources */,
+				E885BF7B1BB8ECFC00E6299A /* email_white_red.png in Resources */,
 				E885BF4F1BB8C52400E6299A /* LaunchScreen.storyboard in Resources */,
+				E885BF7F1BB8F6D700E6299A /* IMG_2987.PNG in Resources */,
 				E885BF4C1BB8C52400E6299A /* Assets.xcassets in Resources */,
 				E885BF4A1BB8C52400E6299A /* Main.storyboard in Resources */,
+				E885BF811BB8FD0100E6299A /* IMG_2987 copy.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E885BF871BBA10B800E6299A /* LoginViewController.swift in Sources */,
 				E885BF471BB8C52400E6299A /* ViewController.swift in Sources */,
 				E885BF451BB8C52400E6299A /* AppDelegate.swift in Sources */,
+				E885BF851BB9A57A00E6299A /* RegisterPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +513,7 @@
 				E885BF6B1BB8C52400E6299A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E885BF6C1BB8C52400E6299A /* Build configuration list for PBXNativeTarget "BB Block ChainTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +522,7 @@
 				E885BF6E1BB8C52400E6299A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E885BF6F1BB8C52400E6299A /* Build configuration list for PBXNativeTarget "BB Block ChainUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +531,7 @@
 				E885BF711BB8C52400E6299A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
