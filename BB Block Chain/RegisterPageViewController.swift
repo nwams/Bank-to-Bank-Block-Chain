@@ -68,7 +68,7 @@ class RegisterPageViewController: UIViewController {
         NSUserDefaults.standardUserDefaults().synchronize()
         
         // Display alert message with confirmation.
-        var myAlert = UIAlertController(title:"Alert", message:"Regristration successful. Thank you!", preferredStyle: UIAlertControllerStyle.Alert)
+        let myAlert = UIAlertController(title:"Alert", message:"Regristration successful. Thank you!", preferredStyle: UIAlertControllerStyle.Alert)
         
         
         // Dismiss when OK button is pressed
@@ -82,7 +82,7 @@ class RegisterPageViewController: UIViewController {
     
     
     func displayMyAlertMessage(userMessage: String){
-        var myAlert = UIAlertController(title:"Alert", message:userMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        let myAlert = UIAlertController(title:"Alert", message:userMessage, preferredStyle: UIAlertControllerStyle.Alert)
         
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
@@ -91,6 +91,7 @@ class RegisterPageViewController: UIViewController {
         
         presentViewController(myAlert, animated: true, completion: nil)
     }
+    
     
     /*
     // MARK: - Navigation
