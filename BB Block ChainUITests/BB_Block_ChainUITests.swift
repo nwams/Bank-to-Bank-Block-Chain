@@ -31,6 +31,48 @@ class BB_Block_ChainUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        app.buttons["Enroll in Online & Mobile Banking"].tap()
+        
+        let firstNameTextField = app.textFields["First Name"]
+        firstNameTextField.tap()
+        firstNameTextField.typeText("Nwamaka")
+        
+        let lastNameTextField = app.textFields["Last Name"]
+        lastNameTextField.tap()
+        lastNameTextField.typeText("Nzeocha")
+        
+        let accountNumberTextField = app.textFields["Account Number"]
+        accountNumberTextField.tap()
+        accountNumberTextField.typeText("1234")
+        
+        let usernameTextField = app.textFields["Username"]
+        usernameTextField.tap()
+        usernameTextField.typeText("nwams")
+        
+        let emailTextField = app.textFields["Email"]
+        emailTextField.tap()
+        emailTextField.typeText("nwamakanz@yahoo.com")
+        
+        let passwordSecureTextField = app.secureTextFields["Password"]
+        passwordSecureTextField.tap()
+        passwordSecureTextField.typeText("1234")
+        
+        let repeatPasswordSecureTextField = app.secureTextFields["Repeat Password"]
+        repeatPasswordSecureTextField.tap()
+        repeatPasswordSecureTextField.typeText("1234")
+        app.buttons["Enroll"].tap()
+        
+        XCTAssert(app.textFields["First Name"].exists)
+        XCTAssert(app.textFields["Last Name"].exists)
+        XCTAssert(app.textFields["Account Number"].exists)
+        XCTAssert(app.textFields["Username"].exists)
+        XCTAssert(app.textFields["Email"].exists)
+        XCTAssert(app.secureTextFields["Password"].exists)
+        XCTAssert(app.secureTextFields["Repeat Password"].exists)
+        
+        
     }
     
 }

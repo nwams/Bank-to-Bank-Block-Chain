@@ -62,13 +62,12 @@ class RegisterPageViewController: UIViewController {
         NSUserDefaults.standardUserDefaults().setObject(userLastName, forKey: "userLastName")
         NSUserDefaults.standardUserDefaults().setObject(userAccountNumber, forKey: "userAccountNumber")
         NSUserDefaults.standardUserDefaults().setObject(userUsername, forKey: "userUsername")
-
         NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "userEmail")
         NSUserDefaults.standardUserDefaults().setObject(userPassword, forKey: "userPassword")
         NSUserDefaults.standardUserDefaults().synchronize()
-        
+                
         // Display alert message with confirmation.
-        let myAlert = UIAlertController(title:"Alert", message:"Regristration successful. Thank you!", preferredStyle: UIAlertControllerStyle.Alert)
+        let myAlert = UIAlertController(title:"Registration successful.", message:"Thank you!", preferredStyle: UIAlertControllerStyle.Alert)
         
         
         // Dismiss when OK button is pressed
@@ -82,7 +81,7 @@ class RegisterPageViewController: UIViewController {
     
     
     func displayMyAlertMessage(userMessage: String){
-        let myAlert = UIAlertController(title:"Alert", message:userMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        let myAlert = UIAlertController(title:"WAIT, NO", message:userMessage, preferredStyle: UIAlertControllerStyle.Alert)
         
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)

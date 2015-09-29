@@ -12,7 +12,6 @@
 		E885BF4A1BB8C52400E6299A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E885BF481BB8C52400E6299A /* Main.storyboard */; };
 		E885BF4C1BB8C52400E6299A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E885BF4B1BB8C52400E6299A /* Assets.xcassets */; };
 		E885BF4F1BB8C52400E6299A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E885BF4D1BB8C52400E6299A /* LaunchScreen.storyboard */; };
-		E885BF5A1BB8C52400E6299A /* BB_Block_ChainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF591BB8C52400E6299A /* BB_Block_ChainTests.swift */; };
 		E885BF651BB8C52400E6299A /* BB_Block_ChainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF641BB8C52400E6299A /* BB_Block_ChainUITests.swift */; };
 		E885BF731BB8C87900E6299A /* screenshots in Resources */ = {isa = PBXBuildFile; fileRef = E885BF721BB8C87900E6299A /* screenshots */; settings = {ASSET_TAGS = (); }; };
 		E885BF791BB8EC2700E6299A /* lock_white_red2.png in Resources */ = {isa = PBXBuildFile; fileRef = E885BF781BB8EC2700E6299A /* lock_white_red2.png */; settings = {ASSET_TAGS = (); }; };
@@ -22,6 +21,8 @@
 		E885BF811BB8FD0100E6299A /* IMG_2987 copy.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E885BF801BB8FD0100E6299A /* IMG_2987 copy.PNG */; settings = {ASSET_TAGS = (); }; };
 		E885BF851BB9A57A00E6299A /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF841BB9A57A00E6299A /* RegisterPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E885BF871BBA10B800E6299A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF861BBA10B800E6299A /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E885BF881BBB0AB100E6299A /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF841BB9A57A00E6299A /* RegisterPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E885BF8A1BBB1F7700E6299A /* BB_Block_ChainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF591BB8C52400E6299A /* BB_Block_ChainTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -296,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E885BF5A1BB8C52400E6299A /* BB_Block_ChainTests.swift in Sources */,
+				E885BF8A1BBB1F7700E6299A /* BB_Block_ChainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E885BF881BBB0AB100E6299A /* RegisterPageViewController.swift in Sources */,
 				E885BF651BB8C52400E6299A /* BB_Block_ChainUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
