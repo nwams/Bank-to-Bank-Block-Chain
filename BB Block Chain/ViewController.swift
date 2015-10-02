@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let transferDetailsButtons = ["From - Checking Acct 2334", "To", "Amount"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        // hide top navivation controller bar
+        self.navigationController!.navigationBar.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +34,7 @@ class ViewController: UIViewController {
         if(!isUserLoggedIn){
             self.performSegueWithIdentifier("loginView", sender: self)
         }
+        
     }
 
     @IBAction func logoutButtonTapped(sender: AnyObject) {
@@ -38,6 +44,8 @@ class ViewController: UIViewController {
         
         self.performSegueWithIdentifier("loginView", sender: self)
     }
-
+    
 }
+
+
 
