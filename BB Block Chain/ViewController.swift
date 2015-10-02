@@ -9,8 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    let transferDetailsButtons = ["From - Checking Acct 2334", "To", "Amount"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
