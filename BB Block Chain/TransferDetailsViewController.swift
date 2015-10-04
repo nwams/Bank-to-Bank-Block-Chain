@@ -15,20 +15,12 @@ class TransferDetailsViewController: UIViewController, UITableViewDataSource {
     
     @available(iOS 2.0, *)
     func numberOfSectionsInTableView(tableView: UITableView) -> Int{
-        // Default is 1 if not implemented
         return 3
     }
     
     
     @available(iOS 2.0, *)
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        /*if (section == 0){
-            return 2
-        }
-        if (section == 1){
-            return 1
-        }*/
-        //return transferDetailsLabels.count
         return 1
     }
     
@@ -78,14 +70,29 @@ class TransferDetailsViewController: UIViewController, UITableViewDataSource {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
+        if (segue.identifier == "ShowAmountSegue") {
+            let destination = (segue.destinationViewController as! UINavigationController).topViewController as! AmountViewController
+            let selectedSection = (sender as! NSIndexPath).section
+            
+            print(selectedSection)
+        }
+        
         // Pass the selected object to the new view controller.
     }
-    */
+
+    
+    func tableView(tableView: UITableView, didSelectSectionAtIndexPath indexPath: NSIndexPath) {
+        let selectedSection = self.transferDetailsTableView.indexPathForSelectedRow!.section
+        print(selectedSection)
+        
+        self.performSegueWithIdentifier("ShowAmountSegue", sender: self)
+        
+    }
+    
 
 }
