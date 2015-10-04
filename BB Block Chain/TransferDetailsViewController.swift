@@ -75,24 +75,9 @@ class TransferDetailsViewController: UIViewController, UITableViewDataSource {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
-        if (segue.identifier == "ShowAmountSegue") {
-            let destination = (segue.destinationViewController as! UINavigationController).topViewController as! AmountViewController
-            let selectedSection = (sender as! NSIndexPath).section
-            
-            print(selectedSection)
         }
         
         // Pass the selected object to the new view controller.
     }
 
-    
-    func tableView(tableView: UITableView, didSelectSectionAtIndexPath indexPath: NSIndexPath) {
-        let selectedSection = self.transferDetailsTableView.indexPathForSelectedRow!.section
-        print(selectedSection)
-        
-        self.performSegueWithIdentifier("ShowAmountSegue", sender: self)
-        
-    }
-    
 
-}

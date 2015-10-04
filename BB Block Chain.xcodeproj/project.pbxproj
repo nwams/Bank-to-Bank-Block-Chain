@@ -30,6 +30,7 @@
 		E8E173391BBE22DD00E4577F /* TransferDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E173381BBE22DD00E4577F /* TransferDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E8E1733B1BBF8F1B00E4577F /* amount_header3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E8E1733A1BBF8F1B00E4577F /* amount_header3.PNG */; settings = {ASSET_TAGS = (); }; };
 		E8E1733F1BBF94EF00E4577F /* AmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E1733E1BBF94EF00E4577F /* AmountViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E8E173411BC0D6BD00E4577F /* TransferDetails2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E173401BC0D6BD00E4577F /* TransferDetails2ViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		E8E173381BBE22DD00E4577F /* TransferDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferDetailsViewController.swift; sourceTree = "<group>"; };
 		E8E1733A1BBF8F1B00E4577F /* amount_header3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amount_header3.PNG; sourceTree = "<group>"; };
 		E8E1733E1BBF94EF00E4577F /* AmountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountViewController.swift; sourceTree = "<group>"; };
+		E8E173401BC0D6BD00E4577F /* TransferDetails2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferDetails2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,9 +147,10 @@
 				E885BF4B1BB8C52400E6299A /* Assets.xcassets */,
 				E885BF4D1BB8C52400E6299A /* LaunchScreen.storyboard */,
 				E885BF501BB8C52400E6299A /* Info.plist */,
-				E885BF841BB9A57A00E6299A /* RegisterPageViewController.swift */,
 				E885BF861BBA10B800E6299A /* LoginViewController.swift */,
+				E885BF841BB9A57A00E6299A /* RegisterPageViewController.swift */,
 				E8E173381BBE22DD00E4577F /* TransferDetailsViewController.swift */,
+				E8E173401BC0D6BD00E4577F /* TransferDetails2ViewController.swift */,
 				E8E1733E1BBF94EF00E4577F /* AmountViewController.swift */,
 			);
 			path = "BB Block Chain";
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E173411BC0D6BD00E4577F /* TransferDetails2ViewController.swift in Sources */,
 				E885BF871BBA10B800E6299A /* LoginViewController.swift in Sources */,
 				E885BF471BB8C52400E6299A /* ViewController.swift in Sources */,
 				E8E1733F1BBF94EF00E4577F /* AmountViewController.swift in Sources */,

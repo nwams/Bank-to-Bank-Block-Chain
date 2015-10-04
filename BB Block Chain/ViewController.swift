@@ -37,12 +37,17 @@ class ViewController: UIViewController {
 
     @IBAction func logoutButtonTapped(sender: AnyObject) {
         NSUserDefaults.standardUserDefaults().setBool(false, forKey:
-        "isUserLoggedIn")
+"isUserLoggedIn")
         NSUserDefaults.standardUserDefaults().synchronize()
         
         self.performSegueWithIdentifier("loginView", sender: self)
     }
     
+    @IBAction func sendMoneyInSecondsButtonTapped(sender: AnyObject) {
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey:
+            "isDollarAmountSaved")
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
 }
 
 
