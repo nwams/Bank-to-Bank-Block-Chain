@@ -10,27 +10,17 @@ import UIKit
 
 class TransferDetailsViewController: UIViewController, UITableViewDataSource {
     
-    //let transferDetailsLabels = ["From - Checking Acct 2334", "To", "Amount"]
-    
-    
     @IBOutlet weak var transferDetailsTableView: UITableView!
+    @IBOutlet weak var cancelButton: UIButton!
     
     @available(iOS 2.0, *)
     func numberOfSectionsInTableView(tableView: UITableView) -> Int{
-        // Default is 1 if not implemented
         return 3
     }
     
     
     @available(iOS 2.0, *)
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        /*if (section == 0){
-            return 2
-        }
-        if (section == 1){
-            return 1
-        }*/
-        //return transferDetailsLabels.count
         return 1
     }
     
@@ -46,12 +36,14 @@ class TransferDetailsViewController: UIViewController, UITableViewDataSource {
             myCell.detailTextLabel?.text = "$2000"
 
         case 1:
-            myCell.textLabel?.text = "To"
-            myCell.detailTextLabel?.text = ""
-
-        case 2:
             myCell.textLabel?.text = "Amount"
             myCell.detailTextLabel?.text = ""
+            myCell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+
+        case 2:
+            myCell.textLabel?.text = "To"
+            myCell.detailTextLabel?.text = ""
+            myCell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
 
         default:
             break
@@ -68,6 +60,8 @@ class TransferDetailsViewController: UIViewController, UITableViewDataSource {
         
         //basically says the dataSource prototype of transferDetailsTableVIew is implemented by the class UITableViewDataSource above
         transferDetailsTableView.dataSource = self
+        
+        cancelButton.layer.borderColor = UIColor(red:188/255.0, green:179/255.0, blue:165/255.0, alpha: 1.0).CGColor
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,14 +70,14 @@ class TransferDetailsViewController: UIViewController, UITableViewDataSource {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
+        }
+        
         // Pass the selected object to the new view controller.
     }
-    */
 
-}
+

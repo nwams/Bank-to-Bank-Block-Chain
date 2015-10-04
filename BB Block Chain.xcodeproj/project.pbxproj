@@ -28,6 +28,9 @@
 		E885BF901BBD964500E6299A /* transfer_details_header.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E885BF8F1BBD964500E6299A /* transfer_details_header.PNG */; settings = {ASSET_TAGS = (); }; };
 		E885BF921BBD9BA200E6299A /* send_money_header.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E885BF911BBD9BA200E6299A /* send_money_header.PNG */; settings = {ASSET_TAGS = (); }; };
 		E8E173391BBE22DD00E4577F /* TransferDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E173381BBE22DD00E4577F /* TransferDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E8E1733B1BBF8F1B00E4577F /* amount_header3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E8E1733A1BBF8F1B00E4577F /* amount_header3.PNG */; settings = {ASSET_TAGS = (); }; };
+		E8E1733F1BBF94EF00E4577F /* AmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E1733E1BBF94EF00E4577F /* AmountViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E8E173411BC0D6BD00E4577F /* TransferDetails2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E173401BC0D6BD00E4577F /* TransferDetails2ViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		E885BF8F1BBD964500E6299A /* transfer_details_header.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transfer_details_header.PNG; sourceTree = "<group>"; };
 		E885BF911BBD9BA200E6299A /* send_money_header.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send_money_header.PNG; sourceTree = "<group>"; };
 		E8E173381BBE22DD00E4577F /* TransferDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferDetailsViewController.swift; sourceTree = "<group>"; };
+		E8E1733A1BBF8F1B00E4577F /* amount_header3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amount_header3.PNG; sourceTree = "<group>"; };
+		E8E1733E1BBF94EF00E4577F /* AmountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountViewController.swift; sourceTree = "<group>"; };
+		E8E173401BC0D6BD00E4577F /* TransferDetails2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferDetails2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 				E885BF7E1BB8F6D700E6299A /* IMG_2987.PNG */,
 				E885BF801BB8FD0100E6299A /* IMG_2987 copy.PNG */,
 				E885BF8B1BBBA39500E6299A /* IMG_2988.PNG */,
+				E8E1733A1BBF8F1B00E4577F /* amount_header3.PNG */,
 				E885BF721BB8C87900E6299A /* screenshots */,
 			);
 			sourceTree = "<group>";
@@ -140,9 +147,11 @@
 				E885BF4B1BB8C52400E6299A /* Assets.xcassets */,
 				E885BF4D1BB8C52400E6299A /* LaunchScreen.storyboard */,
 				E885BF501BB8C52400E6299A /* Info.plist */,
-				E885BF841BB9A57A00E6299A /* RegisterPageViewController.swift */,
 				E885BF861BBA10B800E6299A /* LoginViewController.swift */,
+				E885BF841BB9A57A00E6299A /* RegisterPageViewController.swift */,
 				E8E173381BBE22DD00E4577F /* TransferDetailsViewController.swift */,
+				E8E173401BC0D6BD00E4577F /* TransferDetails2ViewController.swift */,
+				E8E1733E1BBF94EF00E4577F /* AmountViewController.swift */,
 			);
 			path = "BB Block Chain";
 			sourceTree = "<group>";
@@ -273,6 +282,7 @@
 				E885BF791BB8EC2700E6299A /* lock_white_red2.png in Resources */,
 				E885BF8C1BBBA39500E6299A /* IMG_2988.PNG in Resources */,
 				E885BF7D1BB8EE0E00E6299A /* username_white_red.png in Resources */,
+				E8E1733B1BBF8F1B00E4577F /* amount_header3.PNG in Resources */,
 				E885BF901BBD964500E6299A /* transfer_details_header.PNG in Resources */,
 				E885BF8E1BBD95DB00E6299A /* IMG_3001.PNG in Resources */,
 				E885BF7B1BB8ECFC00E6299A /* email_white_red.png in Resources */,
@@ -305,8 +315,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E173411BC0D6BD00E4577F /* TransferDetails2ViewController.swift in Sources */,
 				E885BF871BBA10B800E6299A /* LoginViewController.swift in Sources */,
 				E885BF471BB8C52400E6299A /* ViewController.swift in Sources */,
+				E8E1733F1BBF94EF00E4577F /* AmountViewController.swift in Sources */,
 				E885BF451BB8C52400E6299A /* AppDelegate.swift in Sources */,
 				E8E173391BBE22DD00E4577F /* TransferDetailsViewController.swift in Sources */,
 				E885BF851BB9A57A00E6299A /* RegisterPageViewController.swift in Sources */,
