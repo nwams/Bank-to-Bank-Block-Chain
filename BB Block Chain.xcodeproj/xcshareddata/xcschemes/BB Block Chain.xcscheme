@@ -47,6 +47,11 @@
                BlueprintName = "BB Block ChainUITests"
                ReferencedContainer = "container:BB Block Chain.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "BB_Block_ChainUITests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
