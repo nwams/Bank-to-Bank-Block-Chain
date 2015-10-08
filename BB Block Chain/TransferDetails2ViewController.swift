@@ -12,9 +12,9 @@ class TransferDetails2ViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var amountButton: UIButton!
     @IBOutlet weak var toButton: UIButton!
+    @IBOutlet weak var continueButton: UIButton!
     
-    let myAVC = AmountViewController.self //parentheses does alloc init :)
-
+    let myAVC = AmountViewController.self
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -23,13 +23,14 @@ class TransferDetails2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //fromTableViewCell.detailTextLabel?.text = "$2000"
-        
         cancelButton.layer.borderColor = UIColor(red:188/255.0, green:179/255.0, blue:165/255.0, alpha: 1.0).CGColor
         
         amountButton.layer.borderColor = UIColor(red:209/255.0, green:0/255.0, blue:38/255.0, alpha: 1.0).CGColor
         
         toButton.layer.borderColor = UIColor(red:209/255.0, green:0/255.0, blue:38/255.0, alpha: 1.0).CGColor
+        
+        continueButton.enabled = false
+        continueButton.alpha = 0.5
     }
 
     

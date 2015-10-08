@@ -13,19 +13,17 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userUsernameTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    
+    func check(number: Int) -> String {
+        return "\(number)"
+    }
     
     @IBAction func loginButtonTapped(sender: AnyObject) {
         let userUsername = userUsernameTextField.text

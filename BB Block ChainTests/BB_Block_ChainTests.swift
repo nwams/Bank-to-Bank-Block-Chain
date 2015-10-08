@@ -11,14 +11,15 @@ import XCTest
 @testable import BB_Block_Chain
 
 class BB_Block_ChainTests: XCTestCase {
+    var bbblock: LoginViewController!
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        self.bbblock = LoginViewController()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
@@ -26,13 +27,16 @@ class BB_Block_ChainTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testCheck_returnsNumber() {
+        XCTAssertEqual(self.bbblock.check(11), "11")
     }
     
 }

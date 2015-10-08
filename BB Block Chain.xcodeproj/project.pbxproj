@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E81461461BC363B7000FFD55 /* recipient_details.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E81461451BC363B7000FFD55 /* recipient_details.PNG */; settings = {ASSET_TAGS = (); }; };
+		E81461481BC36617000FFD55 /* RecipientDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81461471BC36617000FFD55 /* RecipientDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E814614E1BC42957000FFD55 /* TextInputTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814614D1BC42957000FFD55 /* TextInputTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E8442C7C1BC5C2A3009CF92D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF861BBA10B800E6299A /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E885BF451BB8C52400E6299A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF441BB8C52400E6299A /* AppDelegate.swift */; };
 		E885BF471BB8C52400E6299A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF461BB8C52400E6299A /* ViewController.swift */; };
 		E885BF4A1BB8C52400E6299A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E885BF481BB8C52400E6299A /* Main.storyboard */; };
@@ -27,6 +31,10 @@
 		E885BF8E1BBD95DB00E6299A /* IMG_3001.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E885BF8D1BBD95DB00E6299A /* IMG_3001.PNG */; settings = {ASSET_TAGS = (); }; };
 		E885BF901BBD964500E6299A /* transfer_details_header.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E885BF8F1BBD964500E6299A /* transfer_details_header.PNG */; settings = {ASSET_TAGS = (); }; };
 		E885BF921BBD9BA200E6299A /* send_money_header.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E885BF911BBD9BA200E6299A /* send_money_header.PNG */; settings = {ASSET_TAGS = (); }; };
+		E89674211BC43E84001FF398 /* 5RowTableView.png in Resources */ = {isa = PBXBuildFile; fileRef = E89674201BC43E84001FF398 /* 5RowTableView.png */; settings = {ASSET_TAGS = (); }; };
+		E89674231BC43EE6001FF398 /* 5RowTableView2.png in Resources */ = {isa = PBXBuildFile; fileRef = E89674221BC43EE6001FF398 /* 5RowTableView2.png */; settings = {ASSET_TAGS = (); }; };
+		E89674271BC45058001FF398 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89674261BC45058001FF398 /* ConfirmViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E896742B1BC4B29E001FF398 /* confirm_header.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E896742A1BC4B29E001FF398 /* confirm_header.PNG */; settings = {ASSET_TAGS = (); }; };
 		E8E173391BBE22DD00E4577F /* TransferDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E173381BBE22DD00E4577F /* TransferDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E8E1733B1BBF8F1B00E4577F /* amount_header3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E8E1733A1BBF8F1B00E4577F /* amount_header3.PNG */; settings = {ASSET_TAGS = (); }; };
 		E8E1733F1BBF94EF00E4577F /* AmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E1733E1BBF94EF00E4577F /* AmountViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -51,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E81461451BC363B7000FFD55 /* recipient_details.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipient_details.PNG; sourceTree = "<group>"; };
+		E81461471BC36617000FFD55 /* RecipientDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipientDetailsViewController.swift; sourceTree = "<group>"; };
+		E814614D1BC42957000FFD55 /* TextInputTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputTableViewController.swift; sourceTree = "<group>"; };
 		E885BF411BB8C52400E6299A /* BB Block Chain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BB Block Chain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E885BF441BB8C52400E6299A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E885BF461BB8C52400E6299A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +87,10 @@
 		E885BF8D1BBD95DB00E6299A /* IMG_3001.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_3001.PNG; sourceTree = "<group>"; };
 		E885BF8F1BBD964500E6299A /* transfer_details_header.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transfer_details_header.PNG; sourceTree = "<group>"; };
 		E885BF911BBD9BA200E6299A /* send_money_header.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send_money_header.PNG; sourceTree = "<group>"; };
+		E89674201BC43E84001FF398 /* 5RowTableView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5RowTableView.png; sourceTree = "<group>"; };
+		E89674221BC43EE6001FF398 /* 5RowTableView2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5RowTableView2.png; sourceTree = "<group>"; };
+		E89674261BC45058001FF398 /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		E896742A1BC4B29E001FF398 /* confirm_header.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confirm_header.PNG; sourceTree = "<group>"; };
 		E8E173381BBE22DD00E4577F /* TransferDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferDetailsViewController.swift; sourceTree = "<group>"; };
 		E8E1733A1BBF8F1B00E4577F /* amount_header3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amount_header3.PNG; sourceTree = "<group>"; };
 		E8E1733E1BBF94EF00E4577F /* AmountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +139,10 @@
 				E885BF801BB8FD0100E6299A /* IMG_2987 copy.PNG */,
 				E885BF8B1BBBA39500E6299A /* IMG_2988.PNG */,
 				E8E1733A1BBF8F1B00E4577F /* amount_header3.PNG */,
+				E81461451BC363B7000FFD55 /* recipient_details.PNG */,
+				E89674201BC43E84001FF398 /* 5RowTableView.png */,
+				E89674221BC43EE6001FF398 /* 5RowTableView2.png */,
+				E896742A1BC4B29E001FF398 /* confirm_header.PNG */,
 				E885BF721BB8C87900E6299A /* screenshots */,
 			);
 			sourceTree = "<group>";
@@ -152,6 +171,9 @@
 				E8E173381BBE22DD00E4577F /* TransferDetailsViewController.swift */,
 				E8E173401BC0D6BD00E4577F /* TransferDetails2ViewController.swift */,
 				E8E1733E1BBF94EF00E4577F /* AmountViewController.swift */,
+				E81461471BC36617000FFD55 /* RecipientDetailsViewController.swift */,
+				E814614D1BC42957000FFD55 /* TextInputTableViewController.swift */,
+				E89674261BC45058001FF398 /* ConfirmViewController.swift */,
 			);
 			path = "BB Block Chain";
 			sourceTree = "<group>";
@@ -241,6 +263,7 @@
 				TargetAttributes = {
 					E885BF401BB8C52400E6299A = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 38YPA5B2RH;
 					};
 					E885BF541BB8C52400E6299A = {
 						CreatedOnToolsVersion = 7.0;
@@ -279,14 +302,18 @@
 			files = (
 				E885BF731BB8C87900E6299A /* screenshots in Resources */,
 				E885BF921BBD9BA200E6299A /* send_money_header.PNG in Resources */,
+				E81461461BC363B7000FFD55 /* recipient_details.PNG in Resources */,
 				E885BF791BB8EC2700E6299A /* lock_white_red2.png in Resources */,
+				E89674211BC43E84001FF398 /* 5RowTableView.png in Resources */,
 				E885BF8C1BBBA39500E6299A /* IMG_2988.PNG in Resources */,
 				E885BF7D1BB8EE0E00E6299A /* username_white_red.png in Resources */,
+				E896742B1BC4B29E001FF398 /* confirm_header.PNG in Resources */,
 				E8E1733B1BBF8F1B00E4577F /* amount_header3.PNG in Resources */,
 				E885BF901BBD964500E6299A /* transfer_details_header.PNG in Resources */,
 				E885BF8E1BBD95DB00E6299A /* IMG_3001.PNG in Resources */,
 				E885BF7B1BB8ECFC00E6299A /* email_white_red.png in Resources */,
 				E885BF4F1BB8C52400E6299A /* LaunchScreen.storyboard in Resources */,
+				E89674231BC43EE6001FF398 /* 5RowTableView2.png in Resources */,
 				E885BF7F1BB8F6D700E6299A /* IMG_2987.PNG in Resources */,
 				E885BF4C1BB8C52400E6299A /* Assets.xcassets in Resources */,
 				E885BF4A1BB8C52400E6299A /* Main.storyboard in Resources */,
@@ -320,8 +347,11 @@
 				E885BF471BB8C52400E6299A /* ViewController.swift in Sources */,
 				E8E1733F1BBF94EF00E4577F /* AmountViewController.swift in Sources */,
 				E885BF451BB8C52400E6299A /* AppDelegate.swift in Sources */,
+				E89674271BC45058001FF398 /* ConfirmViewController.swift in Sources */,
 				E8E173391BBE22DD00E4577F /* TransferDetailsViewController.swift in Sources */,
 				E885BF851BB9A57A00E6299A /* RegisterPageViewController.swift in Sources */,
+				E81461481BC36617000FFD55 /* RecipientDetailsViewController.swift in Sources */,
+				E814614E1BC42957000FFD55 /* TextInputTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8442C7C1BC5C2A3009CF92D /* LoginViewController.swift in Sources */,
 				E885BF8A1BBB1F7700E6299A /* BB_Block_ChainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,10 +493,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = "BB Block Chain/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.cs2048.BB-Block-Chain";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -473,10 +507,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = "BB Block Chain/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.cs2048.BB-Block-Chain";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
