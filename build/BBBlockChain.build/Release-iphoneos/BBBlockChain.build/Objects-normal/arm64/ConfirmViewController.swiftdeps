@@ -1,0 +1,610 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ConfirmViewController"
+provides-nominal:
+- "C12BBBlockChain21ConfirmViewController"
+provides-member:
+- ["C12BBBlockChain21ConfirmViewController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "tableView"
+- "tableView"
+- "showInfoTableView"
+- "numberOfSectionsInTableView"
+- "displayMyAlertMessage"
+- "didReceiveMemoryWarning"
+depends-top-level:
+- "Int"
+- "NSIndexPath"
+- !private "UIAlertAction"
+- !private "UIAlertActionStyle"
+- !private "StringLiteralType"
+- "ConfirmViewController"
+- !private "~="
+- "String"
+- !private "NSUserDefaults"
+- !private "UIAlertControllerStyle"
+- "UITableView"
+- "UITableViewCell"
+- "UIViewController"
+- !private "BooleanLiteralType"
+- "UITableViewDataSource"
+- !private "UIAlertController"
+depends-member:
+- !private ["PSs9AnyObject", "NSUserDefaults"]
+- !private ["PSs9AnyObject", "UIAlertAction"]
+- !private ["PSs9AnyObject", "UIAlertActionStyle"]
+- !private ["PSs9AnyObject", "UIAlertController"]
+- !private ["PSs9AnyObject", "UIAlertControllerStyle"]
+- !private ["PSs9AnyObject", "addAction"]
+- !private ["PSs9AnyObject", "dataSource"]
+- !private ["PSs9AnyObject", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs9AnyObject", "detailTextLabel"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- ["PSs9AnyObject", "displayMyAlertMessage"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "numberOfSectionsInTableView"]
+- !private ["PSs9AnyObject", "presentViewController"]
+- !private ["PSs9AnyObject", "row"]
+- ["PSs9AnyObject", "sectionIndexTitlesForTableView"]
+- ["PSs9AnyObject", "showInfoTableView"]
+- !private ["PSs9AnyObject", "standardUserDefaults"]
+- !private ["PSs9AnyObject", "stringForKey"]
+- ["PSs9AnyObject", "tableView"]
+- !private ["PSs9AnyObject", "text"]
+- !private ["PSs9AnyObject", "textLabel"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "NSUserDefaults"]
+- !private ["PSs11CVarArgType", "UIAlertAction"]
+- !private ["PSs11CVarArgType", "UIAlertActionStyle"]
+- !private ["PSs11CVarArgType", "UIAlertController"]
+- !private ["PSs11CVarArgType", "UIAlertControllerStyle"]
+- !private ["PSs11CVarArgType", "addAction"]
+- !private ["PSs11CVarArgType", "dataSource"]
+- !private ["PSs11CVarArgType", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs11CVarArgType", "detailTextLabel"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "displayMyAlertMessage"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "numberOfSectionsInTableView"]
+- !private ["PSs11CVarArgType", "presentViewController"]
+- !private ["PSs11CVarArgType", "row"]
+- ["PSs11CVarArgType", "sectionIndexTitlesForTableView"]
+- ["PSs11CVarArgType", "showInfoTableView"]
+- !private ["PSs11CVarArgType", "standardUserDefaults"]
+- !private ["PSs11CVarArgType", "stringForKey"]
+- ["PSs11CVarArgType", "tableView"]
+- !private ["PSs11CVarArgType", "text"]
+- !private ["PSs11CVarArgType", "textLabel"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- ["C12BBBlockChain21ConfirmViewController", "Int"]
+- ["C12BBBlockChain21ConfirmViewController", "NSIndexPath"]
+- !private ["C12BBBlockChain21ConfirmViewController", "NSUserDefaults"]
+- ["C12BBBlockChain21ConfirmViewController", "String"]
+- !private ["C12BBBlockChain21ConfirmViewController", "UIAlertAction"]
+- !private ["C12BBBlockChain21ConfirmViewController", "UIAlertActionStyle"]
+- !private ["C12BBBlockChain21ConfirmViewController", "UIAlertController"]
+- !private ["C12BBBlockChain21ConfirmViewController", "UIAlertControllerStyle"]
+- ["C12BBBlockChain21ConfirmViewController", "UITableView"]
+- ["C12BBBlockChain21ConfirmViewController", "UITableViewCell"]
+- ["C12BBBlockChain21ConfirmViewController", "deinit"]
+- ["C12BBBlockChain21ConfirmViewController", "didReceiveMemoryWarning"]
+- ["C12BBBlockChain21ConfirmViewController", "displayMyAlertMessage"]
+- ["C12BBBlockChain21ConfirmViewController", "init"]
+- ["C12BBBlockChain21ConfirmViewController", "numberOfSectionsInTableView"]
+- !private ["C12BBBlockChain21ConfirmViewController", "presentViewController"]
+- ["C12BBBlockChain21ConfirmViewController", "sectionIndexTitlesForTableView"]
+- ["C12BBBlockChain21ConfirmViewController", "showInfoTableView"]
+- ["C12BBBlockChain21ConfirmViewController", "tableView"]
+- ["C12BBBlockChain21ConfirmViewController", "viewDidLoad"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "UIAlertAction"]
+- !private ["PSs23CustomStringConvertible", "UIAlertActionStyle"]
+- !private ["PSs23CustomStringConvertible", "UIAlertController"]
+- !private ["PSs23CustomStringConvertible", "UIAlertControllerStyle"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addAction"]
+- !private ["PSs23CustomStringConvertible", "dataSource"]
+- !private ["PSs23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs23CustomStringConvertible", "detailTextLabel"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "displayMyAlertMessage"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["PSs23CustomStringConvertible", "presentViewController"]
+- !private ["PSs23CustomStringConvertible", "row"]
+- ["PSs23CustomStringConvertible", "sectionIndexTitlesForTableView"]
+- ["PSs23CustomStringConvertible", "showInfoTableView"]
+- !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "stringForKey"]
+- ["PSs23CustomStringConvertible", "tableView"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- !private ["PSs23CustomStringConvertible", "textLabel"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "Alert"]
+- !private ["PSs9Equatable", "Default"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "NSUserDefaults"]
+- !private ["PSs9Equatable", "UIAlertAction"]
+- !private ["PSs9Equatable", "UIAlertActionStyle"]
+- !private ["PSs9Equatable", "UIAlertController"]
+- !private ["PSs9Equatable", "UIAlertControllerStyle"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addAction"]
+- !private ["PSs9Equatable", "dataSource"]
+- !private ["PSs9Equatable", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs9Equatable", "detailTextLabel"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- ["PSs9Equatable", "displayMyAlertMessage"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "numberOfSectionsInTableView"]
+- !private ["PSs9Equatable", "presentViewController"]
+- !private ["PSs9Equatable", "row"]
+- ["PSs9Equatable", "sectionIndexTitlesForTableView"]
+- ["PSs9Equatable", "showInfoTableView"]
+- !private ["PSs9Equatable", "standardUserDefaults"]
+- !private ["PSs9Equatable", "stringForKey"]
+- ["PSs9Equatable", "tableView"]
+- !private ["PSs9Equatable", "text"]
+- !private ["PSs9Equatable", "textLabel"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "Alert"]
+- !private ["PSs8Hashable", "Default"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "NSUserDefaults"]
+- !private ["PSs8Hashable", "UIAlertAction"]
+- !private ["PSs8Hashable", "UIAlertActionStyle"]
+- !private ["PSs8Hashable", "UIAlertController"]
+- !private ["PSs8Hashable", "UIAlertControllerStyle"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addAction"]
+- !private ["PSs8Hashable", "dataSource"]
+- !private ["PSs8Hashable", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs8Hashable", "detailTextLabel"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- ["PSs8Hashable", "displayMyAlertMessage"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "numberOfSectionsInTableView"]
+- !private ["PSs8Hashable", "presentViewController"]
+- !private ["PSs8Hashable", "row"]
+- ["PSs8Hashable", "sectionIndexTitlesForTableView"]
+- ["PSs8Hashable", "showInfoTableView"]
+- !private ["PSs8Hashable", "standardUserDefaults"]
+- !private ["PSs8Hashable", "stringForKey"]
+- ["PSs8Hashable", "tableView"]
+- !private ["PSs8Hashable", "text"]
+- !private ["PSs8Hashable", "textLabel"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSo8NSCoding", "NSUserDefaults"]
+- !private ["PSo8NSCoding", "UIAlertAction"]
+- !private ["PSo8NSCoding", "UIAlertActionStyle"]
+- !private ["PSo8NSCoding", "UIAlertController"]
+- !private ["PSo8NSCoding", "UIAlertControllerStyle"]
+- !private ["PSo8NSCoding", "addAction"]
+- !private ["PSo8NSCoding", "dataSource"]
+- !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo8NSCoding", "detailTextLabel"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "displayMyAlertMessage"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo8NSCoding", "row"]
+- ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
+- ["PSo8NSCoding", "showInfoTableView"]
+- ["PSo8NSCoding", "tableView"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "textLabel"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "row"]
+- !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertActionStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertControllerStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "displayMyAlertMessage"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
+- ["PSo26NSExtensionRequestHandling", "showInfoTableView"]
+- ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo11NSIndexPath", "row"]
+- !private ["CSo8NSNumber", "deinit"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSIndexPath"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIAlertAction"]
+- !private ["CSo8NSObject", "UIAlertActionStyle"]
+- !private ["CSo8NSObject", "UIAlertController"]
+- !private ["CSo8NSObject", "UIAlertControllerStyle"]
+- ["CSo8NSObject", "UITableView"]
+- ["CSo8NSObject", "UITableViewCell"]
+- !private ["CSo8NSObject", "addAction"]
+- !private ["CSo8NSObject", "dataSource"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo8NSObject", "detailTextLabel"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "displayMyAlertMessage"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "presentViewController"]
+- !private ["CSo8NSObject", "row"]
+- ["CSo8NSObject", "sectionIndexTitlesForTableView"]
+- ["CSo8NSObject", "showInfoTableView"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "stringForKey"]
+- ["CSo8NSObject", "tableView"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "textLabel"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
+- !private ["PSo16NSObjectProtocol", "UIAlertActionStyle"]
+- !private ["PSo16NSObjectProtocol", "UIAlertController"]
+- !private ["PSo16NSObjectProtocol", "UIAlertControllerStyle"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
+- !private ["PSo16NSObjectProtocol", "dataSource"]
+- !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo16NSObjectProtocol", "detailTextLabel"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "displayMyAlertMessage"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "row"]
+- ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
+- ["PSo16NSObjectProtocol", "showInfoTableView"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "stringForKey"]
+- ["PSo16NSObjectProtocol", "tableView"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "textLabel"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "row"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "stringForKey"]
+- !private ["CSo7NSValue", "deinit"]
+- !private ["Sq", "deinit"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["VSs5Range", "deinit"]
+- !private ["PSs16RawRepresentable", "Alert"]
+- !private ["PSs16RawRepresentable", "Default"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSo29UIAccessibilityIdentification", "dataSource"]
+- !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "detailTextLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "textLabel"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "Default"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "Alert"]
+- !private ["PSo12UIAppearance", "dataSource"]
+- !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo12UIAppearance", "detailTextLabel"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "textLabel"]
+- !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertActionStyle"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertController"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertControllerStyle"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
+- !private ["PSo21UIAppearanceContainer", "dataSource"]
+- !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo21UIAppearanceContainer", "detailTextLabel"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "displayMyAlertMessage"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
+- ["PSo21UIAppearanceContainer", "showInfoTableView"]
+- ["PSo21UIAppearanceContainer", "tableView"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "textLabel"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "NSUserDefaults"]
+- !private ["PSo18UIContentContainer", "UIAlertAction"]
+- !private ["PSo18UIContentContainer", "UIAlertActionStyle"]
+- !private ["PSo18UIContentContainer", "UIAlertController"]
+- !private ["PSo18UIContentContainer", "UIAlertControllerStyle"]
+- !private ["PSo18UIContentContainer", "addAction"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "displayMyAlertMessage"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
+- ["PSo18UIContentContainer", "showInfoTableView"]
+- ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "dataSource"]
+- !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo17UICoordinateSpace", "detailTextLabel"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "textLabel"]
+- !private ["PSo13UIDynamicItem", "dataSource"]
+- !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo13UIDynamicItem", "detailTextLabel"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "textLabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "detailTextLabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "textLabel"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "NSIndexPath"]
+- !private ["CSo11UIResponder", "NSUserDefaults"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIAlertAction"]
+- !private ["CSo11UIResponder", "UIAlertActionStyle"]
+- !private ["CSo11UIResponder", "UIAlertController"]
+- !private ["CSo11UIResponder", "UIAlertControllerStyle"]
+- ["CSo11UIResponder", "UITableView"]
+- ["CSo11UIResponder", "UITableViewCell"]
+- !private ["CSo11UIResponder", "addAction"]
+- !private ["CSo11UIResponder", "dataSource"]
+- !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo11UIResponder", "detailTextLabel"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "displayMyAlertMessage"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
+- ["CSo11UIResponder", "showInfoTableView"]
+- ["CSo11UIResponder", "tableView"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "textLabel"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["CSo12UIScrollView", "dataSource"]
+- !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo16UIStateRestoring", "NSUserDefaults"]
+- !private ["PSo16UIStateRestoring", "UIAlertAction"]
+- !private ["PSo16UIStateRestoring", "UIAlertActionStyle"]
+- !private ["PSo16UIStateRestoring", "UIAlertController"]
+- !private ["PSo16UIStateRestoring", "UIAlertControllerStyle"]
+- !private ["PSo16UIStateRestoring", "addAction"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "displayMyAlertMessage"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
+- ["PSo16UIStateRestoring", "showInfoTableView"]
+- ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITableView", "dataSource"]
+- !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo15UITableViewCell", "detailTextLabel"]
+- !private ["CSo15UITableViewCell", "textLabel"]
+- !private ["PSo21UITableViewDataSource", "NSUserDefaults"]
+- !private ["PSo21UITableViewDataSource", "UIAlertAction"]
+- !private ["PSo21UITableViewDataSource", "UIAlertActionStyle"]
+- !private ["PSo21UITableViewDataSource", "UIAlertController"]
+- !private ["PSo21UITableViewDataSource", "UIAlertControllerStyle"]
+- ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
+- !private ["PSo21UITableViewDataSource", "presentViewController"]
+- ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
+- !private ["PSo21UITableViewDataSource", "showInfoTableView"]
+- ["PSo21UITableViewDataSource", "tableView"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- !private ["PSo18UITraitEnvironment", "UIAlertAction"]
+- !private ["PSo18UITraitEnvironment", "UIAlertActionStyle"]
+- !private ["PSo18UITraitEnvironment", "UIAlertController"]
+- !private ["PSo18UITraitEnvironment", "UIAlertControllerStyle"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
+- !private ["PSo18UITraitEnvironment", "dataSource"]
+- !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo18UITraitEnvironment", "detailTextLabel"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "displayMyAlertMessage"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
+- ["PSo18UITraitEnvironment", "showInfoTableView"]
+- ["PSo18UITraitEnvironment", "tableView"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "textLabel"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "dataSource"]
+- !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo6UIView", "detailTextLabel"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "textLabel"]
+- ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "NSIndexPath"]
+- !private ["CSo16UIViewController", "NSUserDefaults"]
+- ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIAlertAction"]
+- !private ["CSo16UIViewController", "UIAlertActionStyle"]
+- !private ["CSo16UIViewController", "UIAlertController"]
+- !private ["CSo16UIViewController", "UIAlertControllerStyle"]
+- ["CSo16UIViewController", "UITableView"]
+- ["CSo16UIViewController", "UITableViewCell"]
+- !private ["CSo16UIViewController", "addAction"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "displayMyAlertMessage"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- !private ["CSo16UIViewController", "presentViewController"]
+- ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
+- ["CSo16UIViewController", "showInfoTableView"]
+- ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "dataSource"]
+- !private ["PSs12_Reflectable", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs12_Reflectable", "detailTextLabel"]
+- !private ["PSs12_Reflectable", "text"]
+- !private ["PSs12_Reflectable", "textLabel"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "PSs10Comparable"
+- "C12BBBlockChain21ConfirmViewController"
+- "PSs23CustomStringConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- "PSs8Hashable"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "CSo11NSIndexPath"
+- !private "CSo8NSNumber"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo14NSUserDefaults"
+- !private "CSo7NSValue"
+- !private "Sq"
+- !private "PSs21RandomAccessIndexType"
+- !private "VSs5Range"
+- !private "PSs16RawRepresentable"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo27UIGestureRecognizerDelegate"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- "PSo16UIStateRestoring"
+- !private "CSo11UITableView"
+- !private "CSo15UITableViewCell"
+- "PSo21UITableViewDataSource"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "./Fabric.framework/Headers/FABAttributes.h"
+- "./Fabric.framework/Headers/Fabric.h"
+- "./Fabric.framework/Modules/module.modulemap"
+- "./Crashlytics.framework/Headers/ANSCompatibility.h"
+- "./Crashlytics.framework/Headers/Answers.h"
+- "./Crashlytics.framework/Headers/CLSStackFrame.h"
+- "./Crashlytics.framework/Headers/CLSReport.h"
+- "./Crashlytics.framework/Headers/CLSLogging.h"
+- "./Crashlytics.framework/Headers/CLSAttributes.h"
+- "./Crashlytics.framework/Headers/Crashlytics.h"
+- "./Crashlytics.framework/Modules/module.modulemap"
+interface-hash: "000f5e060e4926da5af7bf76cc765a46"

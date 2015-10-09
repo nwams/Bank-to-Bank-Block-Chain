@@ -1,0 +1,319 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "C12BBBlockChain14ViewController"
+provides-member:
+- ["C12BBBlockChain14ViewController", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "logoutButtonTapped"
+- "viewDidAppear"
+- "sendMoneyInSecondsButtonTapped"
+depends-top-level:
+- "ViewController"
+- "UIViewController"
+- !private "StringLiteralType"
+- !private "NSUserDefaults"
+- "AnyObject"
+- !private "!"
+- "Bool"
+- !private "BooleanLiteralType"
+depends-member:
+- !private ["PSs9AnyObject", "NSUserDefaults"]
+- !private ["PSs9AnyObject", "boolForKey"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "hidden"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "logoutButtonTapped"]
+- !private ["PSs9AnyObject", "navigationBar"]
+- !private ["PSs9AnyObject", "navigationController"]
+- !private ["PSs9AnyObject", "performSegueWithIdentifier"]
+- ["PSs9AnyObject", "sendMoneyInSecondsButtonTapped"]
+- !private ["PSs9AnyObject", "setBool"]
+- !private ["PSs9AnyObject", "standardUserDefaults"]
+- !private ["PSs9AnyObject", "synchronize"]
+- ["PSs9AnyObject", "viewDidAppear"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "NSUserDefaults"]
+- !private ["PSs11CVarArgType", "boolForKey"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "hidden"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "logoutButtonTapped"]
+- !private ["PSs11CVarArgType", "navigationBar"]
+- !private ["PSs11CVarArgType", "navigationController"]
+- !private ["PSs11CVarArgType", "performSegueWithIdentifier"]
+- ["PSs11CVarArgType", "sendMoneyInSecondsButtonTapped"]
+- !private ["PSs11CVarArgType", "setBool"]
+- !private ["PSs11CVarArgType", "standardUserDefaults"]
+- !private ["PSs11CVarArgType", "synchronize"]
+- ["PSs11CVarArgType", "viewDidAppear"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "boolForKey"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "hidden"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "logoutButtonTapped"]
+- !private ["PSs23CustomStringConvertible", "navigationBar"]
+- !private ["PSs23CustomStringConvertible", "navigationController"]
+- !private ["PSs23CustomStringConvertible", "performSegueWithIdentifier"]
+- ["PSs23CustomStringConvertible", "sendMoneyInSecondsButtonTapped"]
+- !private ["PSs23CustomStringConvertible", "setBool"]
+- !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "synchronize"]
+- ["PSs23CustomStringConvertible", "viewDidAppear"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "NSUserDefaults"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "boolForKey"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "hidden"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "logoutButtonTapped"]
+- !private ["PSs9Equatable", "navigationBar"]
+- !private ["PSs9Equatable", "navigationController"]
+- !private ["PSs9Equatable", "performSegueWithIdentifier"]
+- ["PSs9Equatable", "sendMoneyInSecondsButtonTapped"]
+- !private ["PSs9Equatable", "setBool"]
+- !private ["PSs9Equatable", "standardUserDefaults"]
+- !private ["PSs9Equatable", "synchronize"]
+- ["PSs9Equatable", "viewDidAppear"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "NSUserDefaults"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "boolForKey"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "hidden"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "logoutButtonTapped"]
+- !private ["PSs8Hashable", "navigationBar"]
+- !private ["PSs8Hashable", "navigationController"]
+- !private ["PSs8Hashable", "performSegueWithIdentifier"]
+- ["PSs8Hashable", "sendMoneyInSecondsButtonTapped"]
+- !private ["PSs8Hashable", "setBool"]
+- !private ["PSs8Hashable", "standardUserDefaults"]
+- !private ["PSs8Hashable", "synchronize"]
+- ["PSs8Hashable", "viewDidAppear"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "NSUserDefaults"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "hidden"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "logoutButtonTapped"]
+- !private ["PSo8NSCoding", "navigationBar"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "performSegueWithIdentifier"]
+- ["PSo8NSCoding", "sendMoneyInSecondsButtonTapped"]
+- ["PSo8NSCoding", "viewDidAppear"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "logoutButtonTapped"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
+- ["PSo26NSExtensionRequestHandling", "sendMoneyInSecondsButtonTapped"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
+- !private ["CSo8NSObject", "boolForKey"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "hidden"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "logoutButtonTapped"]
+- !private ["CSo8NSObject", "navigationBar"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "performSegueWithIdentifier"]
+- ["CSo8NSObject", "sendMoneyInSecondsButtonTapped"]
+- !private ["CSo8NSObject", "setBool"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "synchronize"]
+- ["CSo8NSObject", "viewDidAppear"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "boolForKey"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "hidden"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "logoutButtonTapped"]
+- !private ["PSo16NSObjectProtocol", "navigationBar"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
+- ["PSo16NSObjectProtocol", "sendMoneyInSecondsButtonTapped"]
+- !private ["PSo16NSObjectProtocol", "setBool"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo14NSUserDefaults", "boolForKey"]
+- !private ["CSo14NSUserDefaults", "setBool"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "synchronize"]
+- !private ["PSo29UIAccessibilityIdentification", "hidden"]
+- !private ["PSo12UIAppearance", "hidden"]
+- !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "hidden"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "logoutButtonTapped"]
+- !private ["PSo21UIAppearanceContainer", "navigationBar"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
+- ["PSo21UIAppearanceContainer", "sendMoneyInSecondsButtonTapped"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo16UIBarPositioning", "hidden"]
+- !private ["PSo18UIContentContainer", "NSUserDefaults"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "logoutButtonTapped"]
+- !private ["PSo18UIContentContainer", "navigationBar"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
+- ["PSo18UIContentContainer", "sendMoneyInSecondsButtonTapped"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "hidden"]
+- !private ["PSo13UIDynamicItem", "hidden"]
+- !private ["CSo15UINavigationBar", "hidden"]
+- !private ["CSo22UINavigationController", "navigationBar"]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "NSUserDefaults"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "hidden"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "logoutButtonTapped"]
+- !private ["CSo11UIResponder", "navigationBar"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "performSegueWithIdentifier"]
+- ["CSo11UIResponder", "sendMoneyInSecondsButtonTapped"]
+- ["CSo11UIResponder", "viewDidAppear"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "NSUserDefaults"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "logoutButtonTapped"]
+- !private ["PSo16UIStateRestoring", "navigationBar"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
+- ["PSo16UIStateRestoring", "sendMoneyInSecondsButtonTapped"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "hidden"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "logoutButtonTapped"]
+- !private ["PSo18UITraitEnvironment", "navigationBar"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
+- ["PSo18UITraitEnvironment", "sendMoneyInSecondsButtonTapped"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "hidden"]
+- ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "NSUserDefaults"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "logoutButtonTapped"]
+- !private ["CSo16UIViewController", "navigationBar"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "performSegueWithIdentifier"]
+- ["CSo16UIViewController", "sendMoneyInSecondsButtonTapped"]
+- ["CSo16UIViewController", "viewDidAppear"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- ["C12BBBlockChain14ViewController", "AnyObject"]
+- ["C12BBBlockChain14ViewController", "Bool"]
+- !private ["C12BBBlockChain14ViewController", "NSUserDefaults"]
+- ["C12BBBlockChain14ViewController", "deinit"]
+- ["C12BBBlockChain14ViewController", "didReceiveMemoryWarning"]
+- ["C12BBBlockChain14ViewController", "init"]
+- ["C12BBBlockChain14ViewController", "logoutButtonTapped"]
+- !private ["C12BBBlockChain14ViewController", "navigationController"]
+- !private ["C12BBBlockChain14ViewController", "performSegueWithIdentifier"]
+- ["C12BBBlockChain14ViewController", "sendMoneyInSecondsButtonTapped"]
+- ["C12BBBlockChain14ViewController", "viewDidAppear"]
+- ["C12BBBlockChain14ViewController", "viewDidLoad"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "hidden"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo14NSUserDefaults"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "PSo16UIBarPositioning"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "CSo15UINavigationBar"
+- !private "CSo22UINavigationController"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "C12BBBlockChain14ViewController"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "./Fabric.framework/Headers/FABAttributes.h"
+- "./Fabric.framework/Headers/Fabric.h"
+- "./Fabric.framework/Modules/module.modulemap"
+- "./Crashlytics.framework/Headers/ANSCompatibility.h"
+- "./Crashlytics.framework/Headers/Answers.h"
+- "./Crashlytics.framework/Headers/CLSStackFrame.h"
+- "./Crashlytics.framework/Headers/CLSReport.h"
+- "./Crashlytics.framework/Headers/CLSLogging.h"
+- "./Crashlytics.framework/Headers/CLSAttributes.h"
+- "./Crashlytics.framework/Headers/Crashlytics.h"
+- "./Crashlytics.framework/Modules/module.modulemap"
+interface-hash: "5acf1353f27feb74825afc32ca6e08fe"

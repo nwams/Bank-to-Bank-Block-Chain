@@ -1,0 +1,455 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoginViewController"
+provides-nominal:
+- "C12BBBlockChain19LoginViewController"
+provides-member:
+- ["C12BBBlockChain19LoginViewController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "userPasswordTextField"
+- "check"
+- "touchesBegan"
+- "loginButtonTapped"
+- "userUsernameTextField"
+- "didReceiveMemoryWarning"
+depends-top-level:
+- "AnyObject"
+- "LoginViewController"
+- "UITextField"
+- !private "BooleanLiteralType"
+- !private "NSUserDefaults"
+- "Set"
+- "UITouch"
+- "Int"
+- !private "StringLiteralType"
+- "UIEvent"
+- "UIViewController"
+- !private "=="
+- "String"
+depends-member:
+- !private ["PSs9AnyObject", "NSUserDefaults"]
+- ["PSs9AnyObject", "check"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "dismissViewControllerAnimated"]
+- !private ["PSs9AnyObject", "endEditing"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "loginButtonTapped"]
+- !private ["PSs9AnyObject", "setBool"]
+- !private ["PSs9AnyObject", "standardUserDefaults"]
+- !private ["PSs9AnyObject", "stringForKey"]
+- !private ["PSs9AnyObject", "synchronize"]
+- !private ["PSs9AnyObject", "text"]
+- ["PSs9AnyObject", "touchesBegan"]
+- ["PSs9AnyObject", "userPasswordTextField"]
+- ["PSs9AnyObject", "userUsernameTextField"]
+- !private ["PSs9AnyObject", "view"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "NSUserDefaults"]
+- ["PSs11CVarArgType", "check"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "dismissViewControllerAnimated"]
+- !private ["PSs11CVarArgType", "endEditing"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "loginButtonTapped"]
+- !private ["PSs11CVarArgType", "setBool"]
+- !private ["PSs11CVarArgType", "standardUserDefaults"]
+- !private ["PSs11CVarArgType", "stringForKey"]
+- !private ["PSs11CVarArgType", "synchronize"]
+- !private ["PSs11CVarArgType", "text"]
+- ["PSs11CVarArgType", "touchesBegan"]
+- ["PSs11CVarArgType", "userPasswordTextField"]
+- ["PSs11CVarArgType", "userUsernameTextField"]
+- !private ["PSs11CVarArgType", "view"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "check"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "dismissViewControllerAnimated"]
+- !private ["PSs23CustomStringConvertible", "endEditing"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "loginButtonTapped"]
+- !private ["PSs23CustomStringConvertible", "setBool"]
+- !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "stringForKey"]
+- !private ["PSs23CustomStringConvertible", "synchronize"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- ["PSs23CustomStringConvertible", "touchesBegan"]
+- ["PSs23CustomStringConvertible", "userPasswordTextField"]
+- ["PSs23CustomStringConvertible", "userUsernameTextField"]
+- !private ["PSs23CustomStringConvertible", "view"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "NSUserDefaults"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "check"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "dismissViewControllerAnimated"]
+- !private ["PSs9Equatable", "endEditing"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "loginButtonTapped"]
+- !private ["PSs9Equatable", "setBool"]
+- !private ["PSs9Equatable", "standardUserDefaults"]
+- !private ["PSs9Equatable", "stringForKey"]
+- !private ["PSs9Equatable", "synchronize"]
+- !private ["PSs9Equatable", "text"]
+- ["PSs9Equatable", "touchesBegan"]
+- ["PSs9Equatable", "userPasswordTextField"]
+- ["PSs9Equatable", "userUsernameTextField"]
+- !private ["PSs9Equatable", "view"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["PSs8Hashable", "NSUserDefaults"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "check"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "dismissViewControllerAnimated"]
+- !private ["PSs8Hashable", "endEditing"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "loginButtonTapped"]
+- !private ["PSs8Hashable", "setBool"]
+- !private ["PSs8Hashable", "standardUserDefaults"]
+- !private ["PSs8Hashable", "stringForKey"]
+- !private ["PSs8Hashable", "synchronize"]
+- !private ["PSs8Hashable", "text"]
+- ["PSs8Hashable", "touchesBegan"]
+- ["PSs8Hashable", "userPasswordTextField"]
+- ["PSs8Hashable", "userUsernameTextField"]
+- !private ["PSs8Hashable", "view"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- ["C12BBBlockChain19LoginViewController", "AnyObject"]
+- ["C12BBBlockChain19LoginViewController", "Int"]
+- !private ["C12BBBlockChain19LoginViewController", "NSUserDefaults"]
+- ["C12BBBlockChain19LoginViewController", "Set"]
+- ["C12BBBlockChain19LoginViewController", "String"]
+- ["C12BBBlockChain19LoginViewController", "UIEvent"]
+- ["C12BBBlockChain19LoginViewController", "UITextField"]
+- ["C12BBBlockChain19LoginViewController", "UITouch"]
+- ["C12BBBlockChain19LoginViewController", "check"]
+- ["C12BBBlockChain19LoginViewController", "deinit"]
+- ["C12BBBlockChain19LoginViewController", "didReceiveMemoryWarning"]
+- !private ["C12BBBlockChain19LoginViewController", "dismissViewControllerAnimated"]
+- ["C12BBBlockChain19LoginViewController", "init"]
+- ["C12BBBlockChain19LoginViewController", "loginButtonTapped"]
+- ["C12BBBlockChain19LoginViewController", "touchesBegan"]
+- ["C12BBBlockChain19LoginViewController", "userPasswordTextField"]
+- ["C12BBBlockChain19LoginViewController", "userUsernameTextField"]
+- !private ["C12BBBlockChain19LoginViewController", "view"]
+- ["C12BBBlockChain19LoginViewController", "viewDidLoad"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "NSUserDefaults"]
+- ["PSo8NSCoding", "check"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
+- !private ["PSo8NSCoding", "endEditing"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "loginButtonTapped"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "touchesBegan"]
+- ["PSo8NSCoding", "userPasswordTextField"]
+- ["PSo8NSCoding", "userUsernameTextField"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- ["PSo26NSExtensionRequestHandling", "check"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "loginButtonTapped"]
+- ["PSo26NSExtensionRequestHandling", "touchesBegan"]
+- ["PSo26NSExtensionRequestHandling", "userPasswordTextField"]
+- ["PSo26NSExtensionRequestHandling", "userUsernameTextField"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
+- ["CSo8NSObject", "Set"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIEvent"]
+- ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "UITouch"]
+- ["CSo8NSObject", "check"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "dismissViewControllerAnimated"]
+- !private ["CSo8NSObject", "endEditing"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "loginButtonTapped"]
+- !private ["CSo8NSObject", "setBool"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "stringForKey"]
+- !private ["CSo8NSObject", "synchronize"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "touchesBegan"]
+- ["CSo8NSObject", "userPasswordTextField"]
+- ["CSo8NSObject", "userUsernameTextField"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- ["PSo16NSObjectProtocol", "check"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
+- !private ["PSo16NSObjectProtocol", "endEditing"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "loginButtonTapped"]
+- !private ["PSo16NSObjectProtocol", "setBool"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "stringForKey"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "touchesBegan"]
+- ["PSo16NSObjectProtocol", "userPasswordTextField"]
+- ["PSo16NSObjectProtocol", "userUsernameTextField"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo14NSUserDefaults", "setBool"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "stringForKey"]
+- !private ["CSo14NSUserDefaults", "synchronize"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs10Streamable", "init"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "endEditing"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "endEditing"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- ["PSo21UIAppearanceContainer", "check"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
+- !private ["PSo21UIAppearanceContainer", "endEditing"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "loginButtonTapped"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "touchesBegan"]
+- ["PSo21UIAppearanceContainer", "userPasswordTextField"]
+- ["PSo21UIAppearanceContainer", "userUsernameTextField"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "NSUserDefaults"]
+- ["PSo18UIContentContainer", "check"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "loginButtonTapped"]
+- ["PSo18UIContentContainer", "touchesBegan"]
+- ["PSo18UIContentContainer", "userPasswordTextField"]
+- ["PSo18UIContentContainer", "userUsernameTextField"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "endEditing"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "endEditing"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo10UIKeyInput", "text"]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Int"]
+- !private ["CSo11UIResponder", "NSUserDefaults"]
+- ["CSo11UIResponder", "Set"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UIEvent"]
+- ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "UITouch"]
+- ["CSo11UIResponder", "check"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
+- !private ["CSo11UIResponder", "endEditing"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "loginButtonTapped"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "touchesBegan"]
+- ["CSo11UIResponder", "userPasswordTextField"]
+- ["CSo11UIResponder", "userUsernameTextField"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "NSUserDefaults"]
+- ["PSo16UIStateRestoring", "check"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "loginButtonTapped"]
+- ["PSo16UIStateRestoring", "touchesBegan"]
+- ["PSo16UIStateRestoring", "userPasswordTextField"]
+- ["PSo16UIStateRestoring", "userUsernameTextField"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITextField", "text"]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- ["PSo18UITraitEnvironment", "check"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
+- !private ["PSo18UITraitEnvironment", "endEditing"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "loginButtonTapped"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "touchesBegan"]
+- ["PSo18UITraitEnvironment", "userPasswordTextField"]
+- ["PSo18UITraitEnvironment", "userUsernameTextField"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "endEditing"]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "Int"]
+- !private ["CSo16UIViewController", "NSUserDefaults"]
+- ["CSo16UIViewController", "Set"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UIEvent"]
+- ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "UITouch"]
+- ["CSo16UIViewController", "check"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "loginButtonTapped"]
+- ["CSo16UIViewController", "touchesBegan"]
+- ["CSo16UIViewController", "userPasswordTextField"]
+- ["CSo16UIViewController", "userUsernameTextField"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "endEditing"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "text"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- "PSs8Hashable"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- "C12BBBlockChain19LoginViewController"
+- !private "PSs14MirrorPathType"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo14NSUserDefaults"
+- !private "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs10Streamable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo10UIKeyInput"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- !private "CSo11UITextField"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "./Fabric.framework/Headers/FABAttributes.h"
+- "./Fabric.framework/Headers/Fabric.h"
+- "./Fabric.framework/Modules/module.modulemap"
+- "./Crashlytics.framework/Headers/ANSCompatibility.h"
+- "./Crashlytics.framework/Headers/Answers.h"
+- "./Crashlytics.framework/Headers/CLSStackFrame.h"
+- "./Crashlytics.framework/Headers/CLSReport.h"
+- "./Crashlytics.framework/Headers/CLSLogging.h"
+- "./Crashlytics.framework/Headers/CLSAttributes.h"
+- "./Crashlytics.framework/Headers/Crashlytics.h"
+- "./Crashlytics.framework/Modules/module.modulemap"
+interface-hash: "72608c9b0d329c6d7def33a36fe6d590"

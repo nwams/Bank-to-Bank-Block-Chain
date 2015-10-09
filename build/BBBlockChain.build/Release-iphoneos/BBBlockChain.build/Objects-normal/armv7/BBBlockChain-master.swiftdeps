@@ -1,0 +1,14 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "c1245f7402a6ffb1243838165bd0931a"
+build_time: [497732057, 379390000]
+inputs: 
+	"/Users/nwams/Dropbox/CornellTech/Startup-Systems/iPhoneApp/BBBlockChain/BB Block Chain/RegisterPageViewController.swift": [497673396, 0]
+	"/Users/nwams/Dropbox/CornellTech/Startup-Systems/iPhoneApp/BBBlockChain/BB Block Chain/LoginViewController.swift": [497673391, 0]
+	"/Users/nwams/Dropbox/CornellTech/Startup-Systems/iPhoneApp/BBBlockChain/BB Block Chain/ConfirmViewController.swift": [497636033, 0]
+	"/Users/nwams/Dropbox/CornellTech/Startup-Systems/iPhoneApp/BBBlockChain/BB Block Chain/RecipientDetailsViewController.swift": [497417529, 0]
+	"/Users/nwams/Dropbox/CornellTech/Startup-Systems/iPhoneApp/BBBlockChain/BB Block Chain/TransferDetails2ViewController.swift": [497633221, 0]
+	"/Users/nwams/Dropbox/CornellTech/Startup-Systems/iPhoneApp/BBBlockChain/BB Block Chain/AmountViewController.swift": [497673574, 0]
+	"/Users/nwams/Dropbox/CornellTech/Startup-Systems/iPhoneApp/BBBlockChain/BB Block Chain/TransferDetailsViewController.swift": [497267283, 0]
+	"/Users/nwams/Dropbox/CornellTech/Startup-Systems/iPhoneApp/BBBlockChain/BB Block Chain/TextInputTableViewController.swift": [497673637, 0]
+	"/Users/nwams/Dropbox/CornellTech/Startup-Systems/iPhoneApp/BBBlockChain/BB Block Chain/ViewController.swift": [497387333, 0]
+	"/Users/nwams/Dropbox/CornellTech/Startup-Systems/iPhoneApp/BBBlockChain/BB Block Chain/AppDelegate.swift": [497652597, 0]
