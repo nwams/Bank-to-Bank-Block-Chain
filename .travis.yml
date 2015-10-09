@@ -3,8 +3,7 @@ osx_image: xcode7
 xcode_project: BB Block Chain.xcodeproj
 xcode_scheme: BB Block Chain
 script:
-- xctool clean build test -project "BBBlockChain.xcodeproj" -scheme "BB Block Chain"
-  -sdk iphonesimulator9.0 dONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+- xctool -project "BB Block Chain.xcodeproj" -scheme "BB Block Chain" -sdk iphoneos9.0 -configuration Debug ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="iPhone Developer: nwamss@gmail.com (KLSZCXUHUM)" CODE_SIGNING_REQUIRED=YES'
 env:
   global:
     secure: VR1XXCyb37x69jClPu0e3r9BXcYyUjS/S70ZusrNZ/xKvLU7bnj+M4aWLFaNAvOX3XRKwkFuSoLCtchbQbUnKSAWKYgT/7ylUN4nTjkenvyyEcMsj2PzPKH4mO4HuAxJzdzyruYPeNVBiXqkvqs9rdPSsQNEyhE05ZZGJkPGWSuoHHxYW0fxkF9xg+mx4vMmLHfjV0IgT+QMX/6SfPw3UTBJ5J+8PPYpSrTDARpqtS2D1R1X6CNYt48F6x5i2akIVb/mYjuQ8AtDchgl/8h0G+BKZuemKaqE3aoaAvh9HbhKyyJ+rlESzz3fiGwWZGzciRt10tzW/xeg1HAbysyLDYmNVpWoYgSSk2dtmLJRpDj24/dlpakW2PNY4ZBi/V5/B5Gm5X9+TbOdtOi5Q8x2exwcgqA2Li+EntZ7ZK0agsG5pggez4SL/xAT5yGIq6VZPy3YEjqEKZGqQOehJ337QWh8f5fmQXUEgBXQPJZzOGhh43C+gnAGU/G2lei28309n7/hpN7IZfnQB+OKpT7tC4+XUgDsBCRCn2P2lLQbSZ+2d6BrvsLNhUmoH7DlsI/ozOe72wtFyMoYioSn2oi9vy1UnamHgcSrzuxEvaoi4oqoZCP28hvpxarRgZQcykMIMxs77w005glMRGNi+xqmFcLJpOwQl87XBfKBC3iEsGI=
