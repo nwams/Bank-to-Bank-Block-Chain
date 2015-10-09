@@ -20,9 +20,15 @@ class AmountViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    //make keyboard pop-up automatically
     override func viewDidAppear(animated: Bool) {
         amountTextField.becomeFirstResponder()
+    }
+    
+    //hide keyboard when not typing
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
     }
     
     @IBAction func cancelButtonPressed(sender: AnyObject) {

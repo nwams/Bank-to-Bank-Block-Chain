@@ -16,21 +16,6 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         showInfoTableView.dataSource = self
-        
-        let gesture: UILongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "longPressed:")
-        gesture.minimumPressDuration = 1.0
-        self.view.addGestureRecognizer(gesture)
-    }
-    
-    func longPressed(longPress: UIGestureRecognizer) {
-        if (longPress.state == UIGestureRecognizerState.Ended) {
-            print("Ended")
-        }
-        else if (longPress.state == UIGestureRecognizerState.Began) {
-            print("Began")
-            // Display alert message
-            displayMyAlertMessage("Thanks Brandon!")
-        }
     }
     
     func displayMyAlertMessage(userMessage: String){

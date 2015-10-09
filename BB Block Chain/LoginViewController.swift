@@ -21,6 +21,12 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    //hide keyboard when not typing
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
+    
     func check(number: Int) -> String {
         return "\(number)"
     }

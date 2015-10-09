@@ -19,6 +19,11 @@ class TextInputTableViewController: UIViewController {
     
     let myCVC = ConfirmViewController()
 
+    //hide keyboard when not typing
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
     
     @IBAction func continueButtonPressed(sender: AnyObject) {
     
