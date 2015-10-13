@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class TextInputTableViewController: UIViewController {
     
@@ -47,6 +48,61 @@ class TextInputTableViewController: UIViewController {
         NSUserDefaults.standardUserDefaults().setObject(receiverAccountNumber, forKey: "receiverAccountNumber")
         NSUserDefaults.standardUserDefaults().setObject(receiverMobileNumber, forKey: "receiverMobileNumber")
         NSUserDefaults.standardUserDefaults().synchronize()
+        
+        let params: [String: AnyObject] = [
+        "name": "Nwamaka", "lastname":"Nzeocha"
+        ]
+        
+        
+        
+        
+        
+        
+        
+        
+        var configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
+        var session = NSURLSession(configuration: configuration)
+        
+        let url = NSURL(string:"https://radiant-tundra-7611.herokuapp.com/TestApi")
+        let request = NSMutableURLRequest(URL: url!)
+        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        request.HTTPMethod = "POST"
+        var err: NSError?
+        request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(params, options: [])
+        
+        let task = session.dataTaskWithRequest(request) {
+            data, response, error in
+            
+            if let httpResponse = response as? NSHTTPURLResponse {
+                if httpResponse.statusCode != 200 {
+                    print("response was not 200: \(response)")
+                    return
+                }
+            }
+            if (error != nil) {
+                print("error submitting request: \(error)")
+                return
+            }
+            
+            // handle the data of the successful response here
+//            var result = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.allZeros, error: nil) as? NSDictionary
+//            println(result)
+        }
+        task.resume()
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //json 
+//        let postEndpoint: String = "https://radiant-tundra-7611.herokuapp.com/nwammy"
+//        let urlRequest = NSURLRequest(URL: NSURL(string: postEndpoint)!)
+//        
+//        NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue(), completionHandler:{_ -> Void in})
     }
     
     func displayMyAlertMessage(userMessage: String){

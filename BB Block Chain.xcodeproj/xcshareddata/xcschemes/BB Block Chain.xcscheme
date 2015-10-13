@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E885BF401BB8C52400E6299A"
-               BuildableName = "BBBlockChain.app"
-               BlueprintName = "BBBlockChain"
-               ReferencedContainer = "container:BBBlockChain.xcodeproj">
+               BuildableName = "BB Block Chain Chain.app"
+               BlueprintName = "BB Block Chain"
+               ReferencedContainer = "container:BB Block Chain.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E885BF541BB8C52400E6299A"
-               BuildableName = "BBBlockChain.xctest"
-               BlueprintName = "BBBlockChainTests"
-               ReferencedContainer = "container:BBBlockChain.xcodeproj">
+               BuildableName = "BB Block Chain Chain.xctest"
+               BlueprintName = "BB Block ChainTests"
+               ReferencedContainer = "container:BB Block Chain.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E885BF5F1BB8C52400E6299A"
-               BuildableName = "BBBlockChain.xctest"
-               BlueprintName = "BBBlockChainUITests"
-               ReferencedContainer = "container:BBBlockChain.xcodeproj">
+               BuildableName = "BB Block Chain Chain.xctest"
+               BlueprintName = "BB Block ChainUITests"
+               ReferencedContainer = "container:BB Block Chain.xcodeproj">
             </BuildableReference>
             <SkippedTests>
                <Test
@@ -58,9 +58,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E885BF401BB8C52400E6299A"
-            BuildableName = "BBBlockChain.app"
-            BlueprintName = "BBBlockChain"
-            ReferencedContainer = "container:BBBlockChain.xcodeproj">
+            BuildableName = "BB Block Chain Chain.app"
+            BlueprintName = "BB Block Chain"
+            ReferencedContainer = "container:BB Block Chain.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -81,9 +81,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E885BF401BB8C52400E6299A"
-            BuildableName = "BBBlockChain.app"
-            BlueprintName = "BBBlockChain"
-            ReferencedContainer = "container:BBBlockChain.xcodeproj">
+            BuildableName = "BB Block Chain Chain.app"
+            BlueprintName = "BB Block Chain"
+            ReferencedContainer = "container:BB Block Chain.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -100,9 +100,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E885BF401BB8C52400E6299A"
-            BuildableName = "BBBlockChain.app"
-            BlueprintName = "BBBlockChain"
-            ReferencedContainer = "container:BBBlockChain.xcodeproj">
+            BuildableName = "BB Block Chain Chain.app"
+            BlueprintName = "BB Block Chain"
+            ReferencedContainer = "container:BB Block Chain.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

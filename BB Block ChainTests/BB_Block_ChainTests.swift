@@ -8,7 +8,7 @@
 
 import XCTest
 
-@testable import BB_Block_Chain
+//@testable import BB_Block_Chain
 
 class BB_Block_ChainTests: XCTestCase {
     var bbblock: LoginViewController!
