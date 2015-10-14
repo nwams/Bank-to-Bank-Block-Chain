@@ -25,8 +25,8 @@ class TransferDetails2ViewController: UIViewController {
         super.viewDidLoad()
         cancelButton.layer.borderColor = UIColor(red:188/255.0, green:179/255.0, blue:165/255.0, alpha: 1.0).CGColor
         
+        //red
         amountButton.layer.borderColor = UIColor(red:209/255.0, green:0/255.0, blue:38/255.0, alpha: 1.0).CGColor
-        
         toButton.layer.borderColor = UIColor(red:209/255.0, green:0/255.0, blue:38/255.0, alpha: 1.0).CGColor
         
         continueButton.enabled = false
@@ -38,10 +38,25 @@ class TransferDetails2ViewController: UIViewController {
         
         let wasDefaultSet = NSUserDefaults.standardUserDefaults().boolForKey("isDollarAmountSaved")
         
-        //change button color to grey after setting amount :)
+        //change Amount button color to grey after setting amount :)
         if(wasDefaultSet){
             amountButton.layer.borderColor = UIColor(red:171/255.0, green:171/255.0, blue:171/255.0, alpha: 1.0).CGColor
             amountButton.setTitleColor(UIColor(red:171/255.0, green:171/255.0, blue:171/255.0, alpha: 1.0), forState: .Normal)
+        }
+        
+        let wasReceipientsDefaultSet = NSUserDefaults.standardUserDefaults().boolForKey("isReceipientsInfoSaved")
+        
+        //change To button color to grey after setting receipient details
+        if(wasReceipientsDefaultSet){
+            toButton.layer.borderColor = UIColor(red:171/255.0, green:171/255.0, blue:171/255.0, alpha: 1.0).CGColor
+            toButton.setTitleColor(UIColor(red:171/255.0, green:171/255.0, blue:171/255.0, alpha: 1.0), forState: .Normal)
+        }
+        
+        
+        // if Amount and To are both set, activate Continue button
+        if (wasDefaultSet && wasReceipientsDefaultSet){
+            continueButton.enabled = true
+            continueButton.alpha = 1
         }
         
     }

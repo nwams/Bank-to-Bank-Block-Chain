@@ -26,6 +26,16 @@ class TextInputTableViewController: UIViewController {
         super.touchesBegan(touches, withEvent: event)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        cancelButton.layer.borderColor = UIColor(red:188/255.0, green:179/255.0, blue:165/255.0, alpha: 1.0).CGColor
+    }
+    
+    //make keyboard pop-up automatically
+    override func viewDidAppear(animated: Bool) {
+        firstName.becomeFirstResponder()
+    }
+    
     @IBAction func continueButtonPressed(sender: AnyObject) {
     
         let receiverFirstName = firstName.text
@@ -49,47 +59,15 @@ class TextInputTableViewController: UIViewController {
         NSUserDefaults.standardUserDefaults().setObject(receiverMobileNumber, forKey: "receiverMobileNumber")
         NSUserDefaults.standardUserDefaults().synchronize()
         
-        let params: [String: AnyObject] = [
-        "name": "Nwamaka", "lastname":"Nzeocha"
-        ]
-        
-        
-        
-        
-        
-        
-        
-        
-        var configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
-        var session = NSURLSession(configuration: configuration)
-        
-        let url = NSURL(string:"https://radiant-tundra-7611.herokuapp.com/TestApi")
-        let request = NSMutableURLRequest(URL: url!)
-        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
-        request.HTTPMethod = "POST"
-        var err: NSError?
-        request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(params, options: [])
-        
-        let task = session.dataTaskWithRequest(request) {
-            data, response, error in
+        // mark recipient data as saved
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey:"isReceipientsInfoSaved")
+        NSUserDefaults.standardUserDefaults().synchronize()
             
-            if let httpResponse = response as? NSHTTPURLResponse {
-                if httpResponse.statusCode != 200 {
-                    print("response was not 200: \(response)")
-                    return
-                }
-            }
-            if (error != nil) {
-                print("error submitting request: \(error)")
-                return
-            }
-            
-            // handle the data of the successful response here
-//            var result = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.allZeros, error: nil) as? NSDictionary
-//            println(result)
-        }
-        task.resume()
+        //dismiss the current view
+        self.dismissViewControllerAnimated(true, completion: nil)
         
+        
+                
         
         
         
@@ -127,10 +105,7 @@ class TextInputTableViewController: UIViewController {
     }
     */
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        cancelButton.layer.borderColor = UIColor(red:188/255.0, green:179/255.0, blue:165/255.0, alpha: 1.0).CGColor
-    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
