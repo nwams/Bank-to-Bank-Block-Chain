@@ -47,6 +47,9 @@ class ViewController: UIViewController {
         NSUserDefaults.standardUserDefaults().setBool(false, forKey:
             "isDollarAmountSaved")
         NSUserDefaults.standardUserDefaults().synchronize()
+        
+        //Recipients data NOT saved yet
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey:"isReceipientsInfoSaved")
     }
 }
 
