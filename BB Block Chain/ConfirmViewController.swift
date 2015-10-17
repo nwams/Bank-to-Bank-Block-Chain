@@ -68,9 +68,13 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
 
     @IBAction func sendButtonPressed(sender: AnyObject) {
         let receiverfirstName = NSUserDefaults.standardUserDefaults().stringForKey("receiverFirstName")
-        let sendAmount = NSUserDefaults.standardUserDefaults().stringForKey("dollarAmount")
         let receiverLastName = NSUserDefaults.standardUserDefaults().stringForKey("receiverLastName");
+        let sendAmount = NSUserDefaults.standardUserDefaults().stringForKey("dollarAmount")
+        let receiverBankName = NSUserDefaults.standardUserDefaults().stringForKey("receiverBankName")
+        let receiverAccountNumber = NSUserDefaults.standardUserDefaults().stringForKey("receiverAccountNumber")
+        let receiverMobileNumber = NSUserDefaults.standardUserDefaults().stringForKey("receiverMobileNumber")
 
+        // fancy alert button
         SCLAlertView().showSuccess(
             "Congratulations",
             subTitle: "$" + sendAmount! + " sent to " + receiverfirstName! + " " + receiverLastName!,
@@ -78,33 +82,23 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
             colorTextButton: 0xFFFFFF
         )
         
-//        let alertView = SCLAlertView()
-//        alertView.addButton("Start New Transfer") {
-//            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//            let vc = storyboard.instantiateViewControllerWithIdentifier("homeViewController") as UIViewController
-//            self.presentViewController(vc, animated: true, completion: nil)
-//        }
-//        alertView.showSuccess("Yay!", subTitle: "this alert view has buttons")
+        let params = [
+            "firstname": receiverfirstName!,
+            "lastname":receiverLastName!,
+            "sendamount": sendAmount!,
+            "receiverBankName": receiverBankName!,
+            "receiverAccountNumber": receiverAccountNumber!,
+            "receiverMobileNumber": receiverMobileNumber!
+        ] as Dictionary<String, String>
         
-        let params: [String: AnyObject] = [
-            "name": "Nwamaka", "lastname":"Nzeocha"
-        ]
-        
-        
-        
-        
-        
-        
-        
-        
-        var configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
-        var session = NSURLSession(configuration: configuration)
+        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let session = NSURLSession(configuration: configuration)
         
         let url = NSURL(string:"https://radiant-tundra-7611.herokuapp.com/TestApi")
         let request = NSMutableURLRequest(URL: url!)
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         request.HTTPMethod = "POST"
-        var err: NSError?
+        //var err: NSError?
         request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(params, options: [])
         
         let task = session.dataTaskWithRequest(request) {
@@ -121,9 +115,6 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
                 return
             }
             
-            // handle the data of the successful response here
-            //            var result = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.allZeros, error: nil) as? NSDictionary
-            //            println(result)
         }
         task.resume()
 
