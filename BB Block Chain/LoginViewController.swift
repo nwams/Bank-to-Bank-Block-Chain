@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+
 
 class LoginViewController: UIViewController {
     
@@ -15,6 +17,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NSUserDefaults.standardUserDefaults().setObject("2813308004", forKey: "userMobilePhone")
+        NSUserDefaults.standardUserDefaults().synchronize()
     }
 
     override func didReceiveMemoryWarning() {

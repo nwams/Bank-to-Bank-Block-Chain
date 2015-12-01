@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class TransferDetails2ViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!

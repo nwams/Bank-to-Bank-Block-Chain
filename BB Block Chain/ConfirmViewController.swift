@@ -8,6 +8,7 @@
 
 import UIKit
 import SCLAlertView
+import Parse
 
 class ConfirmViewController: UIViewController, UITableViewDataSource {
     
@@ -67,6 +68,20 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
 
 
     @IBAction func sendButtonPressed(sender: AnyObject) {
+        let userUsername = NSUserDefaults.standardUserDefaults().stringForKey("userUsername")
+        let userFirstName = NSUserDefaults.standardUserDefaults().stringForKey("userFirstName")
+        let userLastName = NSUserDefaults.standardUserDefaults().stringForKey("userLastName")
+        let userAccountNumber = NSUserDefaults.standardUserDefaults().stringForKey("userAccountNumber")
+        let userBankName = NSUserDefaults.standardUserDefaults().stringForKey("userBankName")
+        let userMobilePhone = NSUserDefaults.standardUserDefaults().stringForKey("userMobilePhone")
+//        print("userUsername", userUsername)
+//        print("userFirstName", userFirstName)
+//        print("userLastName", userLastName)
+//        print("userAccountNumber", userAccountNumber)
+//        print("userBankName", userBankName)
+//        print("userMobilePhone", userMobilePhone)
+
+        
         let receiverfirstName = NSUserDefaults.standardUserDefaults().stringForKey("receiverFirstName")
         let receiverLastName = NSUserDefaults.standardUserDefaults().stringForKey("receiverLastName");
         let sendAmount = NSUserDefaults.standardUserDefaults().stringForKey("dollarAmount")
@@ -74,6 +89,12 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
         let receiverAccountNumber = NSUserDefaults.standardUserDefaults().stringForKey("receiverAccountNumber")
         let receiverMobileNumber = NSUserDefaults.standardUserDefaults().stringForKey("receiverMobileNumber")
 
+//        print("receiverLastName", receiverLastName)
+//        print("dollarAmount", sendAmount)
+//        print("receiverBankName", receiverBankName)
+//        print("receiverAccountNumber", receiverAccountNumber)
+//        print("receiverMobileNumber", receiverMobileNumber)
+        
         // fancy alert button
         SCLAlertView().showSuccess(
             "Congratulations",
@@ -82,41 +103,30 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
             colorTextButton: 0xFFFFFF
         )
         
-        let params = [
-            "firstname": receiverfirstName!,
-            "lastname":receiverLastName!,
-            "sendamount": sendAmount!,
-            "receiverBankName": receiverBankName!,
-            "receiverAccountNumber": receiverAccountNumber!,
-            "receiverMobileNumber": receiverMobileNumber!
-        ] as Dictionary<String, String>
+        //send Transaction data to Parse Database
+        let Transactions = PFObject(className:"Transactions")
+        Transactions["sender_user_name"] = userUsername
+        Transactions["sender_first_name"] = userFirstName
+        Transactions["sender_last_name"] = userLastName
+        Transactions["sender_bank_name"] = userBankName
+        Transactions["sender_account_number"] = userAccountNumber
+        Transactions["sender_mobile_number"] = userMobilePhone
         
-        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
-        let session = NSURLSession(configuration: configuration)
+        Transactions["receiver_first_name"] = receiverfirstName
+        Transactions["receiver_last_name"] = receiverLastName
+        Transactions["amount_sent"] = sendAmount
+        Transactions["receiver_bank_name"] = receiverBankName
+        Transactions["receiver_account_number"] = receiverAccountNumber
+        Transactions["receiver_mobile_number"] = receiverMobileNumber
         
-        let url = NSURL(string:"https://radiant-tundra-7611.herokuapp.com/TestApi")
-        let request = NSMutableURLRequest(URL: url!)
-        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
-        request.HTTPMethod = "POST"
-        //var err: NSError?
-        request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(params, options: [])
-        
-        let task = session.dataTaskWithRequest(request) {
-            data, response, error in
-            
-            if let httpResponse = response as? NSHTTPURLResponse {
-                if httpResponse.statusCode != 200 {
-                    print("response was not 200: \(response)")
-                    return
-                }
+        Transactions.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                // The object has been saved.
+            } else {
+                // There was a problem, check error.description
             }
-            if (error != nil) {
-                print("error submitting request: \(error)")
-                return
-            }
-            
         }
-        task.resume()
 
     }
     

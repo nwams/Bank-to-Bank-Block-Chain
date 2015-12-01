@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class RegisterPageViewController: UIViewController {
     
@@ -69,6 +70,8 @@ class RegisterPageViewController: UIViewController {
         NSUserDefaults.standardUserDefaults().setObject(userUsername, forKey: "userUsername")
         NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "userEmail")
         NSUserDefaults.standardUserDefaults().setObject(userPassword, forKey: "userPassword")
+        NSUserDefaults.standardUserDefaults().setObject("Bank of America", forKey: "userBankName")
+        NSUserDefaults.standardUserDefaults().setObject("2813308004", forKey: "userMobilePhone")
         NSUserDefaults.standardUserDefaults().synchronize()
                 
         // Display alert message with confirmation.
