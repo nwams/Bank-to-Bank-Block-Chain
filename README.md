@@ -1,7 +1,8 @@
 # Bank-to-Bank-Block-Chain
 Startup systems design &amp; engineering project
+[![Build Status](https://magnum.travis-ci.com/nwams/Bank-to-Bank-Block-Chain.svg?token=RpeF892beaNjohLnzLAD&branch=master)](https://magnum.travis-ci.com/nwams/Bank-to-Bank-Block-Chain)
 
-Block Chain Based Remittance API
+### Block Chain Based Remittance API
 ---------------------------------
 
 ### Background
