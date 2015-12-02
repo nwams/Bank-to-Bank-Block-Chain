@@ -40,19 +40,42 @@ class LoginViewController: UIViewController {
         let userUsername = userUsernameTextField.text
         let userPassword = userPasswordTextField.text
         
-        // check if user username & password match the stored email/pass
-        let userUsernameStored = NSUserDefaults.standardUserDefaults().stringForKey("userUsername");
-        let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
+        // Run a spinner to show a task in progress
+        let spinner: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0, 0, 150, 150)) as UIActivityIndicatorView
+        spinner.startAnimating()
         
-        // store info that user is successfully logged in
-        if(userUsernameStored == userUsername){
-            if(userPasswordStored == userPassword){
+        // Send a request to login
+        PFUser.logInWithUsernameInBackground(userUsername!, password: userPassword!, block: { (user, error) -> Void in
+            
+            // Stop the spinner
+            spinner.stopAnimating()
+            
+            if ((user) != nil) {
+                // store info that user is successfully logged in
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey:"isUserLoggedIn");
                 NSUserDefaults.standardUserDefaults().synchronize()
                 //dismiss the login view
                 self.dismissViewControllerAnimated(true, completion: nil)
+                
+            } else {
+                let alert = UIAlertView(title: "Error", message: "Invalid username & password", delegate: self, cancelButtonTitle: "OK")
+                alert.show()
             }
-        }
+        })
+        
+//        // check if user username & password match the stored email/pass
+//        let userUsernameStored = NSUserDefaults.standardUserDefaults().stringForKey("userUsername");
+//        let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
+//        
+//        // store info that user is successfully logged in
+//        if(userUsernameStored == userUsername){
+//            if(userPasswordStored == userPassword){
+//                NSUserDefaults.standardUserDefaults().setBool(true, forKey:"isUserLoggedIn");
+//                NSUserDefaults.standardUserDefaults().synchronize()
+//                //dismiss the login view
+//                self.dismissViewControllerAnimated(true, completion: nil)
+//            }
+//        }
     }
     
 

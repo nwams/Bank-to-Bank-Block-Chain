@@ -11,6 +11,7 @@
 		E81461461BC363B7000FFD55 /* recipient_details.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E81461451BC363B7000FFD55 /* recipient_details.PNG */; };
 		E81461481BC36617000FFD55 /* RecipientDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81461471BC36617000FFD55 /* RecipientDetailsViewController.swift */; };
 		E814614E1BC42957000FFD55 /* TextInputTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814614D1BC42957000FFD55 /* TextInputTableViewController.swift */; };
+		E82E264E1C0FA37B00A211DD /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF841BB9A57A00E6299A /* RegisterPageViewController.swift */; };
 		E8442C7C1BC5C2A3009CF92D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF861BBA10B800E6299A /* LoginViewController.swift */; };
 		E85F87D61BCCEE4400950401 /* launch_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = E85F87D51BCCEE4400950401 /* launch_pic.png */; };
 		E885BF451BB8C52400E6299A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF441BB8C52400E6299A /* AppDelegate.swift */; };
@@ -450,6 +451,7 @@
 			files = (
 				E8442C7C1BC5C2A3009CF92D /* LoginViewController.swift in Sources */,
 				E885BF8A1BBB1F7700E6299A /* BB_Block_ChainTests.swift in Sources */,
+				E82E264E1C0FA37B00A211DD /* RegisterPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

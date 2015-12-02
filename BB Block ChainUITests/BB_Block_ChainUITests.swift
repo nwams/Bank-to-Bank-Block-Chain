@@ -71,8 +71,6 @@ class BB_Block_ChainUITests: XCTestCase {
         XCTAssert(app.textFields["Email"].exists)
         XCTAssert(app.secureTextFields["Password"].exists)
         XCTAssert(app.secureTextFields["Repeat Password"].exists)
-        
-        
     }
     
 }

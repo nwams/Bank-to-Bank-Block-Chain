@@ -53,38 +53,91 @@ class RegisterPageViewController: UIViewController {
             // Display alert message
             displayMyAlertMessage("All fields are required")
             return
-        }
-        
-        
-        // Check if passwords match
-        if (userPassword != userRepeatPassword){
+        } else if (userPassword != userRepeatPassword){ // Check if passwords match
             // Display an alert message
             displayMyAlertMessage("Passwords do not match")
             return
-        }
-        
-        // Store data
-        NSUserDefaults.standardUserDefaults().setObject(userFirstName, forKey: "userFirstName")
-        NSUserDefaults.standardUserDefaults().setObject(userLastName, forKey: "userLastName")
-        NSUserDefaults.standardUserDefaults().setObject(userAccountNumber, forKey: "userAccountNumber")
-        NSUserDefaults.standardUserDefaults().setObject(userUsername, forKey: "userUsername")
-        NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "userEmail")
-        NSUserDefaults.standardUserDefaults().setObject(userPassword, forKey: "userPassword")
-        NSUserDefaults.standardUserDefaults().setObject("Bank of America", forKey: "userBankName")
-        NSUserDefaults.standardUserDefaults().setObject("2813308004", forKey: "userMobilePhone")
-        NSUserDefaults.standardUserDefaults().synchronize()
+        } else {
+            // Run a spinner to show a task in progress
+            let spinner: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0, 0, 150, 150)) as UIActivityIndicatorView
+            spinner.startAnimating()
+            
+            /***********************************
+             USER AUTHENTICATION W/ PARSE DB
+            ************************************/
+            let newUser = PFUser()
+            
+            newUser["firstname"] = userFirstName
+            newUser["lastname"] = userLastName
+            newUser["account_number"] = userAccountNumber
+            newUser["bank_name"] = "Bank of America"
+            newUser.username = userUsername
+            newUser.password = userPassword
+            newUser.email = userEmail
+            newUser["mobile_phone"] = "2813308004"
+            
+            // sign up the user asynchronously
+            newUser.signUpInBackgroundWithBlock ({
+                (success: Bool, error: NSError?) -> Void in
                 
-        // Display alert message with confirmation.
-        let myAlert = UIAlertController(title:"Registration successful.", message:"Thank you!", preferredStyle: UIAlertControllerStyle.Alert)
-        
-        
-        // Dismiss when OK button is pressed
-        let okAction = UIAlertAction(title: "Ok", style:UIAlertActionStyle.Default){
-            action in self.dismissViewControllerAnimated(true, completion: nil)
+                // stop the spinner
+                spinner.stopAnimating()
+                if (success) {
+                    // The object has been saved.
+                    
+                    // Store data
+                    NSUserDefaults.standardUserDefaults().setObject(userFirstName, forKey: "userFirstName")
+                    NSUserDefaults.standardUserDefaults().setObject(userLastName, forKey: "userLastName")
+                    NSUserDefaults.standardUserDefaults().setObject(userAccountNumber, forKey: "userAccountNumber")
+                    NSUserDefaults.standardUserDefaults().setObject(userUsername, forKey: "userUsername")
+                    NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "userEmail")
+                    NSUserDefaults.standardUserDefaults().setObject(userPassword, forKey: "userPassword")
+                    NSUserDefaults.standardUserDefaults().setObject("Bank of America", forKey: "userBankName")
+                    NSUserDefaults.standardUserDefaults().setObject("2813308004", forKey: "userMobilePhone")
+                    NSUserDefaults.standardUserDefaults().synchronize()
+                    
+                    // Display alert message with confirmation.
+                    let myAlert = UIAlertController(title:"Registration successful.", message:"Thank you!", preferredStyle: UIAlertControllerStyle.Alert)
+                    
+                    // Dismiss when OK button is pressed
+                    let okAction = UIAlertAction(title: "Ok", style:UIAlertActionStyle.Default){
+                        action in self.dismissViewControllerAnimated(true, completion: nil)
+                    }
+                    
+                    // go back to viewController screen
+                    myAlert.addAction(okAction);
+                    self.presentViewController(myAlert, animated: true, completion: nil)
+                } else {
+                    // There was a problem, check error.description
+                }
+            })
+            
+            
         }
-        // go back to viewController screen
-        myAlert.addAction(okAction);
-        self.presentViewController(myAlert, animated: true, completion: nil)
+        
+//        // Store data
+//        NSUserDefaults.standardUserDefaults().setObject(userFirstName, forKey: "userFirstName")
+//        NSUserDefaults.standardUserDefaults().setObject(userLastName, forKey: "userLastName")
+//        NSUserDefaults.standardUserDefaults().setObject(userAccountNumber, forKey: "userAccountNumber")
+//        NSUserDefaults.standardUserDefaults().setObject(userUsername, forKey: "userUsername")
+//        NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "userEmail")
+//        NSUserDefaults.standardUserDefaults().setObject(userPassword, forKey: "userPassword")
+//        NSUserDefaults.standardUserDefaults().setObject("Bank of America", forKey: "userBankName")
+//        NSUserDefaults.standardUserDefaults().setObject("2813308004", forKey: "userMobilePhone")
+//        NSUserDefaults.standardUserDefaults().synchronize()
+        
+//        // Display alert message with confirmation.
+//        let myAlert = UIAlertController(title:"Registration successful.", message:"Thank you!", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        
+//        // Dismiss when OK button is pressed
+//        let okAction = UIAlertAction(title: "Ok", style:UIAlertActionStyle.Default){
+//            action in self.dismissViewControllerAnimated(true, completion: nil)
+//        }
+        
+//        // go back to viewController screen
+//        myAlert.addAction(okAction);
+//        self.presentViewController(myAlert, animated: true, completion: nil)
     }
     
     

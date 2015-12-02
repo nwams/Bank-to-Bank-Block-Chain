@@ -38,8 +38,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func logoutButtonTapped(sender: AnyObject) {
-        NSUserDefaults.standardUserDefaults().setBool(false, forKey:
-"isUserLoggedIn")
+        // Send a request to log out a user
+        PFUser.logOut()
+        
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey:"isUserLoggedIn")
         NSUserDefaults.standardUserDefaults().synchronize()
         
         self.performSegueWithIdentifier("loginView", sender: self)

@@ -15,7 +15,6 @@ class BB_Block_ChainTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        
         self.bbblock = LoginViewController()
     }
     
@@ -33,6 +32,26 @@ class BB_Block_ChainTests: XCTestCase {
         self.measureBlock {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testController() {
+        
+        class ControllerToTest: UIAlertController {
+            var displayMyAlertWasCalled = false
+            private override func show(){
+                displayMyAlertWasCalled = true
+            }
+        }
+        
+        let rpvc = RegisterPageViewController()
+        
+        // DO THE NECESSARY
+        rpvc.addAction = ControllerToTest()
+        
+        // Ensure the Controller logic is correct by checking 
+        // the state of the modified class: 
+        rpvc.self.registerButtonTapped(AnyObject)
+        XCTAssertTrue(instanceToTest.displayMyAlertWasCalled)
     }
     
     func testCheck_returnsNumber() {
