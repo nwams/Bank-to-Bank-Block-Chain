@@ -69,17 +69,11 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
 
     @IBAction func sendButtonPressed(sender: AnyObject) {
         let userUsername = NSUserDefaults.standardUserDefaults().stringForKey("userUsername")
-        let userFirstName = NSUserDefaults.standardUserDefaults().stringForKey("userFirstName")
-        let userLastName = NSUserDefaults.standardUserDefaults().stringForKey("userLastName")
-        let userAccountNumber = NSUserDefaults.standardUserDefaults().stringForKey("userAccountNumber")
-        let userBankName = NSUserDefaults.standardUserDefaults().stringForKey("userBankName")
-        let userMobilePhone = NSUserDefaults.standardUserDefaults().stringForKey("userMobilePhone")
-//        print("userUsername", userUsername)
-//        print("userFirstName", userFirstName)
-//        print("userLastName", userLastName)
-//        print("userAccountNumber", userAccountNumber)
-//        print("userBankName", userBankName)
-//        print("userMobilePhone", userMobilePhone)
+//        let userFirstName = NSUserDefaults.standardUserDefaults().stringForKey("userFirstName")
+//        let userLastName = NSUserDefaults.standardUserDefaults().stringForKey("userLastName")
+//        let userAccountNumber = NSUserDefaults.standardUserDefaults().stringForKey("userAccountNumber")
+//        let userBankName = NSUserDefaults.standardUserDefaults().stringForKey("userBankName")
+//        let userMobilePhone = NSUserDefaults.standardUserDefaults().stringForKey("userMobilePhone")
 
         
         let receiverfirstName = NSUserDefaults.standardUserDefaults().stringForKey("receiverFirstName")
@@ -88,12 +82,6 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
         let receiverBankName = NSUserDefaults.standardUserDefaults().stringForKey("receiverBankName")
         let receiverAccountNumber = NSUserDefaults.standardUserDefaults().stringForKey("receiverAccountNumber")
         let receiverMobileNumber = NSUserDefaults.standardUserDefaults().stringForKey("receiverMobileNumber")
-
-//        print("receiverLastName", receiverLastName)
-//        print("dollarAmount", sendAmount)
-//        print("receiverBankName", receiverBankName)
-//        print("receiverAccountNumber", receiverAccountNumber)
-//        print("receiverMobileNumber", receiverMobileNumber)
         
         // fancy alert button
         SCLAlertView().showSuccess(
@@ -105,13 +93,11 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
         
         //send Transaction data to Parse Database
         let Transactions = PFObject(className:"Transactions")
-        Transactions["sender_user_name"] = userUsername
-        Transactions["sender_first_name"] = userFirstName
-        Transactions["sender_last_name"] = userLastName
-        Transactions["sender_bank_name"] = userBankName
-        Transactions["sender_account_number"] = userAccountNumber
-        Transactions["sender_mobile_number"] = userMobilePhone
         
+        //sender username
+        Transactions["username"] = userUsername
+        
+        // receiver info
         Transactions["receiver_first_name"] = receiverfirstName
         Transactions["receiver_last_name"] = receiverLastName
         Transactions["amount_sent"] = sendAmount
