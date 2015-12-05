@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "String": {
+      "applicationId": "QrNi3zPI91mQq60eFZBsdNrB9LpuTfMB8MPhTJ0n"
+    },
+    "_default": {
+      "link": "String"
+    }
+  }
+}

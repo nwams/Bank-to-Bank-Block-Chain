@@ -38,7 +38,6 @@ class RegisterPageViewController: UIViewController {
     }
     
     @IBAction func registerButtonTapped(sender: AnyObject) {
-        
         let userFirstName = userFirstNameTextField.text
         let userLastName = userLastNameTextField.text
         let userAccountNumber = userAccountNumberTextField.text
@@ -75,6 +74,7 @@ class RegisterPageViewController: UIViewController {
             newUser.password = userPassword
             newUser.email = userEmail
             newUser["mobile_phone"] = "2813308004"
+            newUser["balance"] = 15000.00
             
             // sign up the user asynchronously
             newUser.signUpInBackgroundWithBlock ({
