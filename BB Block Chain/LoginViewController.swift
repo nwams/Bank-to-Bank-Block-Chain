@@ -51,6 +51,7 @@ class LoginViewController: UIViewController {
             spinner.stopAnimating()
             
             if ((user) != nil) {
+                NSUserDefaults.standardUserDefaults().setObject(userUsername, forKey: "userUsername")
                 // store info that user is successfully logged in
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey:"isUserLoggedIn");
                 NSUserDefaults.standardUserDefaults().synchronize()
@@ -62,20 +63,6 @@ class LoginViewController: UIViewController {
                 alert.show()
             }
         })
-        
-//        // check if user username & password match the stored email/pass
-//        let userUsernameStored = NSUserDefaults.standardUserDefaults().stringForKey("userUsername");
-//        let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
-//        
-//        // store info that user is successfully logged in
-//        if(userUsernameStored == userUsername){
-//            if(userPasswordStored == userPassword){
-//                NSUserDefaults.standardUserDefaults().setBool(true, forKey:"isUserLoggedIn");
-//                NSUserDefaults.standardUserDefaults().synchronize()
-//                //dismiss the login view
-//                self.dismissViewControllerAnimated(true, completion: nil)
-//            }
-//        }
     }
     
 

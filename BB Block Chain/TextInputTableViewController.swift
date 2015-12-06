@@ -66,22 +66,6 @@ class TextInputTableViewController: UIViewController {
             
         //dismiss the current view
         self.dismissViewControllerAnimated(true, completion: nil)
-        
-        
-                
-        
-        
-        
-        
-        
-        
-        
-        
-        //json 
-//        let postEndpoint: String = "https://radiant-tundra-7611.herokuapp.com/nwammy"
-//        let urlRequest = NSURLRequest(URL: NSURL(string: postEndpoint)!)
-//        
-//        NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue(), completionHandler:{_ -> Void in})
     }
     
     func displayMyAlertMessage(userMessage: String){
@@ -94,19 +78,6 @@ class TextInputTableViewController: UIViewController {
     @IBAction func cancelButtonPressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    /*
-    @IBAction func continueButton(sender: AnyObject) {
-        let myArray: [String?] = [firstName.text, lastName.text, bankName.text, accountNum.text, mobileNum.text]
-        print("printin' in the consoooole")
-        myCVC.title = "Confirm"
-        
-        //let navController = UINavigationController(rootViewController: myCVC);
-        self.presentViewController(myCVC, animated: true, completion: nil);
-    }
-    */
-    
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

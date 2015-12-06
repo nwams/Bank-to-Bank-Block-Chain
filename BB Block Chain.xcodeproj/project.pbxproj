@@ -37,6 +37,7 @@
 		E89674231BC43EE6001FF398 /* 5RowTableView2.png in Resources */ = {isa = PBXBuildFile; fileRef = E89674221BC43EE6001FF398 /* 5RowTableView2.png */; };
 		E89674271BC45058001FF398 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89674261BC45058001FF398 /* ConfirmViewController.swift */; };
 		E896742B1BC4B29E001FF398 /* confirm_header.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E896742A1BC4B29E001FF398 /* confirm_header.PNG */; };
+		E8B4748D1C13972300DED65C /* AccountBalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B4748C1C13972300DED65C /* AccountBalanceViewController.swift */; };
 		E8E173391BBE22DD00E4577F /* TransferDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E173381BBE22DD00E4577F /* TransferDetailsViewController.swift */; };
 		E8E1733B1BBF8F1B00E4577F /* amount_header3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E8E1733A1BBF8F1B00E4577F /* amount_header3.PNG */; };
 		E8E1733F1BBF94EF00E4577F /* AmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E1733E1BBF94EF00E4577F /* AmountViewController.swift */; };
@@ -96,6 +97,7 @@
 		E89674221BC43EE6001FF398 /* 5RowTableView2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5RowTableView2.png; sourceTree = "<group>"; };
 		E89674261BC45058001FF398 /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		E896742A1BC4B29E001FF398 /* confirm_header.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confirm_header.PNG; sourceTree = "<group>"; };
+		E8B4748C1C13972300DED65C /* AccountBalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountBalanceViewController.swift; sourceTree = "<group>"; };
 		E8E173381BBE22DD00E4577F /* TransferDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferDetailsViewController.swift; sourceTree = "<group>"; };
 		E8E1733A1BBF8F1B00E4577F /* amount_header3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amount_header3.PNG; sourceTree = "<group>"; };
 		E8E1733E1BBF94EF00E4577F /* AmountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				E81461471BC36617000FFD55 /* RecipientDetailsViewController.swift */,
 				E814614D1BC42957000FFD55 /* TextInputTableViewController.swift */,
 				E89674261BC45058001FF398 /* ConfirmViewController.swift */,
+				E8B4748C1C13972300DED65C /* AccountBalanceViewController.swift */,
 			);
 			path = "BB Block Chain";
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				E885BF871BBA10B800E6299A /* LoginViewController.swift in Sources */,
 				E885BF471BB8C52400E6299A /* ViewController.swift in Sources */,
 				E8E1733F1BBF94EF00E4577F /* AmountViewController.swift in Sources */,
+				E8B4748D1C13972300DED65C /* AccountBalanceViewController.swift in Sources */,
 				E885BF451BB8C52400E6299A /* AppDelegate.swift in Sources */,
 				E89674271BC45058001FF398 /* ConfirmViewController.swift in Sources */,
 				E8E173391BBE22DD00E4577F /* TransferDetailsViewController.swift in Sources */,

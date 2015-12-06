@@ -26,7 +26,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nI2-J1-cNm">
                                 <rect key="frame" x="20" y="339" width="280" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.23921568627450979" green="0.82352941176470584" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Send Money in Seconds!">
@@ -45,7 +45,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheap, Easy, Secure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="la2-Pr-VGA">
                                 <rect key="frame" x="20" y="402" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -62,6 +62,24 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="logoutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rc0-B2-ZrO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D65-eO-lcG">
+                                <rect key="frame" x="20" y="438" width="280" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="View Account Balance">
+                                    <color key="titleColor" red="0.23921568630000001" green="0.82352941180000006" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="oQ8-3v-b50" kind="modal" identifier="showBalanceSegue" id="eat-EV-7jD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -138,6 +156,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wdd-w9-9d0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1595" y="349"/>
+        </scene>
+        <!--Account Balance View Controller-->
+        <scene sceneID="4Ml-lW-s9C">
+            <objects>
+                <viewController id="oQ8-3v-b50" customClass="AccountBalanceViewController" customModule="BB_Block_Chain_Chain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TyN-SF-Ce6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Balance: 2334" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hgO-4Q-5ry">
+                                <rect key="frame" x="20" y="48" width="221" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l4y-en-jQ2">
+                                <rect key="frame" x="284" y="48" width="11" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountBalance" destination="l4y-en-jQ2" id="zHw-qO-JgI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7v-nM-4wk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="1062"/>
         </scene>
         <!--Transfer Details2 View Controller-->
         <scene sceneID="IWm-F9-YEA">
@@ -513,11 +564,12 @@
                     <connections>
                         <outlet property="cancelButton" destination="zXT-r2-kiy" id="Avq-oV-47x"/>
                         <outlet property="showInfoTableView" destination="Voa-l5-mUe" id="zoC-1W-kn8"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="segueA" id="Nie-Ok-rNZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gQI-5C-bbx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="539" y="1791"/>
+            <point key="canvasLocation" x="111" y="1807"/>
         </scene>
         <!--Register Page View Controller-->
         <scene sceneID="dvd-ad-SsN">
@@ -629,7 +681,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahX-fd-rTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1603" y="1027"/>
+            <point key="canvasLocation" x="1595" y="1239"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6vZ-Gb-TOo">
@@ -663,6 +715,7 @@
         <image name="username_white_red.png" width="266" height="265"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Nie-Ok-rNZ"/>
         <segue reference="gV4-GD-8Dq"/>
     </inferredMetricsTieBreakers>
 </document>

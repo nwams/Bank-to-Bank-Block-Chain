@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 
         // hide top navivation controller bar
-        self.navigationController!.navigationBar.hidden = true
+        //self.navigationController!.navigationBar.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     // when user tries to access Protected page, present login view
     override func viewDidAppear(animated: Bool) {
-        
+        self.navigationController?.navigationBarHidden = true
         let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn")
         
         if(!isUserLoggedIn){

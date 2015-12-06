@@ -69,28 +69,15 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
 
     @IBAction func sendButtonPressed(sender: AnyObject) {
         let userUsername = NSUserDefaults.standardUserDefaults().stringForKey("userUsername")
-//        let userFirstName = NSUserDefaults.standardUserDefaults().stringForKey("userFirstName")
-//        let userLastName = NSUserDefaults.standardUserDefaults().stringForKey("userLastName")
-//        let userAccountNumber = NSUserDefaults.standardUserDefaults().stringForKey("userAccountNumber")
-//        let userBankName = NSUserDefaults.standardUserDefaults().stringForKey("userBankName")
-//        let userMobilePhone = NSUserDefaults.standardUserDefaults().stringForKey("userMobilePhone")
-
-        
         let receiverfirstName = NSUserDefaults.standardUserDefaults().stringForKey("receiverFirstName")
         let receiverLastName = NSUserDefaults.standardUserDefaults().stringForKey("receiverLastName");
         let sendAmount = NSUserDefaults.standardUserDefaults().stringForKey("dollarAmount")
         let receiverBankName = NSUserDefaults.standardUserDefaults().stringForKey("receiverBankName")
         let receiverAccountNumber = NSUserDefaults.standardUserDefaults().stringForKey("receiverAccountNumber")
         let receiverMobileNumber = NSUserDefaults.standardUserDefaults().stringForKey("receiverMobileNumber")
-        
-        // fancy alert button
-        SCLAlertView().showSuccess(
-            "Congratulations",
-            subTitle: "$" + sendAmount! + " sent to " + receiverfirstName! + " " + receiverLastName!,
-            colorStyle: 0x43CAA7,
-            colorTextButton: 0xFFFFFF
-        )
-        
+    
+        let amount: Float = (sendAmount! as NSString).floatValue
+
         //send Transaction data to Parse Database
         let Transactions = PFObject(className:"Transactions")
         
@@ -100,7 +87,7 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
         // receiver info
         Transactions["receiver_first_name"] = receiverfirstName
         Transactions["receiver_last_name"] = receiverLastName
-        Transactions["amount_sent"] = sendAmount
+        Transactions["amount"] = amount
         Transactions["receiver_bank_name"] = receiverBankName
         Transactions["receiver_account_number"] = receiverAccountNumber
         Transactions["receiver_mobile_number"] = receiverMobileNumber
@@ -109,10 +96,45 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
             (success: Bool, error: NSError?) -> Void in
             if (success) {
                 // The object has been saved.
+                
+                // fancy alert button
+                let alert = SCLAlertView()
+                alert.showCloseButton = false
+                alert.addButton("Okay") {
+                    self.performSegueWithIdentifier("segueA", sender: nil)
+                }
+                alert.showSuccess(
+                    "Congratulations",
+                    subTitle: "$" + sendAmount! + " sent to " + receiverfirstName! + " " + receiverLastName!,
+                    colorStyle: 0x43CAA7,
+                    colorTextButton: 0xFFFFFF)
             } else {
                 // There was a problem, check error.description
             }
         }
+        
+        // Do any additional setup after loading the view.
+//        let query = PFQuery(className:"User")
+//        query.whereKey("username", equalTo: "nwams")
+//        query.getFirstObjectInBackgroundWithBlock{
+//            (newUser: PFObject?, error: NSError?) -> Void in
+//            if error == nil {
+//                print(newUser)
+//            } else {
+//                print(error)
+//            }
+//        }
+
+        
+    
+    
+
+        
+        //check if user is logged in, show updated account balance
+//        if ((PFUser.currentUser()) != nil) {
+//            
+//        }
+        
 
     }
     
