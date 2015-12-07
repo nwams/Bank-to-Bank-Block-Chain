@@ -14,6 +14,7 @@ class TransferDetails2ViewController: UIViewController {
     @IBOutlet weak var amountButton: UIButton!
     @IBOutlet weak var toButton: UIButton!
     @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var accountBalance: UILabel!
     
     let myAVC = AmountViewController.self
     
@@ -32,6 +33,18 @@ class TransferDetails2ViewController: UIViewController {
         
         continueButton.enabled = false
         continueButton.alpha = 0.5
+        
+        // display updated user account balance
+        let currentUser = PFUser.currentUser()
+        currentUser!.fetchInBackgroundWithBlock { (object, error) -> Void in
+            currentUser!.fetchIfNeededInBackgroundWithBlock { (result, error) -> Void in
+                // get rid of Optional print by using if let
+                if let usrBalance = currentUser!.objectForKey("balance"){
+                    let usrBal = usrBalance
+                    self.accountBalance.text = "$" + String(usrBal)
+                }
+            }
+        }
     }
 
     

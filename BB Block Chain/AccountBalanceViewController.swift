@@ -22,7 +22,7 @@ class AccountBalanceViewController: UIViewController {
                 // get rid of Optional print by using if let
                 if let usrBalance = currentUser!.objectForKey("balance"){
                     let usrBal = usrBalance
-                    self.accountBalance.text = String(usrBal)
+                    self.accountBalance.text = "$" + String(usrBal)
                 }
             }
         }

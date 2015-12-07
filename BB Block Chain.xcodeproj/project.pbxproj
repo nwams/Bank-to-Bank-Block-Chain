@@ -37,6 +37,10 @@
 		E89674231BC43EE6001FF398 /* 5RowTableView2.png in Resources */ = {isa = PBXBuildFile; fileRef = E89674221BC43EE6001FF398 /* 5RowTableView2.png */; };
 		E89674271BC45058001FF398 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89674261BC45058001FF398 /* ConfirmViewController.swift */; };
 		E896742B1BC4B29E001FF398 /* confirm_header.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E896742A1BC4B29E001FF398 /* confirm_header.PNG */; };
+		E8A14A2F1C14130E00BC6EC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A14A2E1C14130E00BC6EC8 /* Images.xcassets */; };
+		E8A14A311C14C89D00BC6EC8 /* ObjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A14A301C14C89D00BC6EC8 /* ObjectsTableViewController.swift */; };
+		E8A14A331C14CADB00BC6EC8 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A14A321C14CADB00BC6EC8 /* BaseTableViewCell.swift */; };
+		E8A14A351C15040600BC6EC8 /* launch_image.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A14A341C15040600BC6EC8 /* launch_image.png */; };
 		E8B4748D1C13972300DED65C /* AccountBalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B4748C1C13972300DED65C /* AccountBalanceViewController.swift */; };
 		E8E173391BBE22DD00E4577F /* TransferDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E173381BBE22DD00E4577F /* TransferDetailsViewController.swift */; };
 		E8E1733B1BBF8F1B00E4577F /* amount_header3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E8E1733A1BBF8F1B00E4577F /* amount_header3.PNG */; };
@@ -97,6 +101,10 @@
 		E89674221BC43EE6001FF398 /* 5RowTableView2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5RowTableView2.png; sourceTree = "<group>"; };
 		E89674261BC45058001FF398 /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		E896742A1BC4B29E001FF398 /* confirm_header.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confirm_header.PNG; sourceTree = "<group>"; };
+		E8A14A2E1C14130E00BC6EC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E8A14A301C14C89D00BC6EC8 /* ObjectsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectsTableViewController.swift; sourceTree = "<group>"; };
+		E8A14A321C14CADB00BC6EC8 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		E8A14A341C15040600BC6EC8 /* launch_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_image.png; sourceTree = "<group>"; };
 		E8B4748C1C13972300DED65C /* AccountBalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountBalanceViewController.swift; sourceTree = "<group>"; };
 		E8E173381BBE22DD00E4577F /* TransferDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferDetailsViewController.swift; sourceTree = "<group>"; };
 		E8E1733A1BBF8F1B00E4577F /* amount_header3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amount_header3.PNG; sourceTree = "<group>"; };
@@ -169,6 +177,7 @@
 				E89674221BC43EE6001FF398 /* 5RowTableView2.png */,
 				E896742A1BC4B29E001FF398 /* confirm_header.PNG */,
 				E85F87D51BCCEE4400950401 /* launch_pic.png */,
+				E8A14A341C15040600BC6EC8 /* launch_image.png */,
 				E885BF721BB8C87900E6299A /* screenshots */,
 				AF66D3BE6501F85510D34A98 /* Pods */,
 				6FA5812979B437567682DC27 /* Frameworks */,
@@ -202,6 +211,9 @@
 				E814614D1BC42957000FFD55 /* TextInputTableViewController.swift */,
 				E89674261BC45058001FF398 /* ConfirmViewController.swift */,
 				E8B4748C1C13972300DED65C /* AccountBalanceViewController.swift */,
+				E8A14A301C14C89D00BC6EC8 /* ObjectsTableViewController.swift */,
+				E8A14A321C14CADB00BC6EC8 /* BaseTableViewCell.swift */,
+				E8A14A2E1C14130E00BC6EC8 /* Images.xcassets */,
 			);
 			path = "BB Block Chain";
 			sourceTree = "<group>";
@@ -336,6 +348,7 @@
 				E885BF921BBD9BA200E6299A /* send_money_header.PNG in Resources */,
 				E81461461BC363B7000FFD55 /* recipient_details.PNG in Resources */,
 				E885BF791BB8EC2700E6299A /* lock_white_red2.png in Resources */,
+				E8A14A351C15040600BC6EC8 /* launch_image.png in Resources */,
 				E89674211BC43E84001FF398 /* 5RowTableView.png in Resources */,
 				E885BF8C1BBBA39500E6299A /* IMG_2988.PNG in Resources */,
 				E885BF7D1BB8EE0E00E6299A /* username_white_red.png in Resources */,
@@ -347,6 +360,7 @@
 				E885BF7B1BB8ECFC00E6299A /* email_white_red.png in Resources */,
 				E885BF4F1BB8C52400E6299A /* LaunchScreen.storyboard in Resources */,
 				E89674231BC43EE6001FF398 /* 5RowTableView2.png in Resources */,
+				E8A14A2F1C14130E00BC6EC8 /* Images.xcassets in Resources */,
 				E885BF7F1BB8F6D700E6299A /* IMG_2987.PNG in Resources */,
 				E885BF4A1BB8C52400E6299A /* Main.storyboard in Resources */,
 				E885BF811BB8FD0100E6299A /* IMG_2987 copy.PNG in Resources */,
@@ -435,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A14A311C14C89D00BC6EC8 /* ObjectsTableViewController.swift in Sources */,
 				E8E173411BC0D6BD00E4577F /* TransferDetails2ViewController.swift in Sources */,
 				E885BF871BBA10B800E6299A /* LoginViewController.swift in Sources */,
 				E885BF471BB8C52400E6299A /* ViewController.swift in Sources */,
@@ -445,6 +460,7 @@
 				E8E173391BBE22DD00E4577F /* TransferDetailsViewController.swift in Sources */,
 				E885BF851BB9A57A00E6299A /* RegisterPageViewController.swift in Sources */,
 				E81461481BC36617000FFD55 /* RecipientDetailsViewController.swift in Sources */,
+				E8A14A331C14CADB00BC6EC8 /* BaseTableViewCell.swift in Sources */,
 				E814614E1BC42957000FFD55 /* TextInputTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,7 +606,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 19430539B88120EA4CF3A0AE /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -609,7 +624,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1955607BE0644177B8F5D703 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";

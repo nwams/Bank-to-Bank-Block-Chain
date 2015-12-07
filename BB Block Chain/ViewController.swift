@@ -12,12 +12,16 @@ import Parse
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var viewTransactionsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
         // hide top navivation controller bar
         //self.navigationController!.navigationBar.hidden = true
+        //red
+        viewTransactionsButton.layer.borderColor = UIColor(red:61/255.0, green:210/255.0, blue:183/255.0, alpha: 1.0).CGColor
     }
 
     override func didReceiveMemoryWarning() {
