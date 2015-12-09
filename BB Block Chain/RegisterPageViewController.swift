@@ -73,7 +73,7 @@ class RegisterPageViewController: UIViewController {
             newUser.username = userUsername
             newUser.password = userPassword
             newUser.email = userEmail
-            newUser["mobile_phone"] = "2813308004"
+            newUser["mobile_phone"] = "8325418199"
             newUser["balance"] = 15000.00
             
             // sign up the user asynchronously
@@ -93,7 +93,7 @@ class RegisterPageViewController: UIViewController {
                     NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "userEmail")
                     NSUserDefaults.standardUserDefaults().setObject(userPassword, forKey: "userPassword")
                     NSUserDefaults.standardUserDefaults().setObject("Bank of America", forKey: "userBankName")
-                    NSUserDefaults.standardUserDefaults().setObject("2813308004", forKey: "userMobilePhone")
+                    NSUserDefaults.standardUserDefaults().setObject("8325418199", forKey: "userMobilePhone")
                     NSUserDefaults.standardUserDefaults().synchronize()
                     
                     // Display alert message with confirmation.
@@ -111,33 +111,7 @@ class RegisterPageViewController: UIViewController {
                     // There was a problem, check error.description
                 }
             })
-            
-            
         }
-        
-//        // Store data
-//        NSUserDefaults.standardUserDefaults().setObject(userFirstName, forKey: "userFirstName")
-//        NSUserDefaults.standardUserDefaults().setObject(userLastName, forKey: "userLastName")
-//        NSUserDefaults.standardUserDefaults().setObject(userAccountNumber, forKey: "userAccountNumber")
-//        NSUserDefaults.standardUserDefaults().setObject(userUsername, forKey: "userUsername")
-//        NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "userEmail")
-//        NSUserDefaults.standardUserDefaults().setObject(userPassword, forKey: "userPassword")
-//        NSUserDefaults.standardUserDefaults().setObject("Bank of America", forKey: "userBankName")
-//        NSUserDefaults.standardUserDefaults().setObject("2813308004", forKey: "userMobilePhone")
-//        NSUserDefaults.standardUserDefaults().synchronize()
-        
-//        // Display alert message with confirmation.
-//        let myAlert = UIAlertController(title:"Registration successful.", message:"Thank you!", preferredStyle: UIAlertControllerStyle.Alert)
-        
-        
-//        // Dismiss when OK button is pressed
-//        let okAction = UIAlertAction(title: "Ok", style:UIAlertActionStyle.Default){
-//            action in self.dismissViewControllerAnimated(true, completion: nil)
-//        }
-        
-//        // go back to viewController screen
-//        myAlert.addAction(okAction);
-//        self.presentViewController(myAlert, animated: true, completion: nil)
     }
     
     

@@ -68,7 +68,8 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
 
 
     @IBAction func sendButtonPressed(sender: AnyObject) {
-        let userUsername = NSUserDefaults.standardUserDefaults().stringForKey("userUsername")
+        let user = PFUser.currentUser()
+        let userUsername = user!.objectForKey("username")!
         let receiverfirstName = NSUserDefaults.standardUserDefaults().stringForKey("receiverFirstName")
         let receiverLastName = NSUserDefaults.standardUserDefaults().stringForKey("receiverLastName");
         let sendAmount = NSUserDefaults.standardUserDefaults().stringForKey("dollarAmount")
@@ -83,7 +84,6 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
         
         //sender username
         Transactions["username"] = userUsername
-        
         // receiver info
         Transactions["receiver_first_name"] = receiverfirstName
         Transactions["receiver_last_name"] = receiverLastName
@@ -108,36 +108,39 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
                     subTitle: "$" + sendAmount! + " sent to " + receiverfirstName! + " " + receiverLastName!,
                     colorStyle: 0x43CAA7,
                     colorTextButton: 0xFFFFFF)
+                let receiverPhoneC = "+1" + String(receiverMobileNumber!)
+                
+//                // prefix country code +1
+//                let transDict: [NSObject : AnyObject]! = [
+//                    "receiverPhoneC": "+1" + String(receiverMobileNumber!),
+//                    "userFirstName": userFirstName!,
+//                    "userLastName": userLastName!,
+//                    "amount": sendAmount!,
+//                    "receiverFirstName": receiverfirstName!
+//                ]
+//                print(transDict)
+//                // call twilio js
+//                PFCloud.callFunctionInBackground("twilio", withParameters: transDict) { (result: AnyObject?, error: NSError?) in
+//                    let getBack = result as? NSObject
+//                    print(getBack)
+//                }
+                let user = PFUser.currentUser()
+                print ("PHONE", "+1" + String(user!.objectForKey("mobile_phone")!))
+                print ("SENDER NAME", user!.objectForKey("firstname")!)
+                
+                let phone = "+1" + String(user!.objectForKey("mobile_phone")!)
+                
+                PFCloud.callFunctionInBackground("twilio", withParameters: ["receiverPhone":phone]) { (result: AnyObject?, error: NSError?) in
+                    let getBack = result as? NSObject
+                    print(getBack)
+                }
             } else {
                 // There was a problem, check error.description
             }
         }
         
-        // Do any additional setup after loading the view.
-//        let query = PFQuery(className:"User")
-//        query.whereKey("username", equalTo: "nwams")
-//        query.getFirstObjectInBackgroundWithBlock{
-//            (newUser: PFObject?, error: NSError?) -> Void in
-//            if error == nil {
-//                print(newUser)
-//            } else {
-//                print(error)
-//            }
-//        }
-
-        
-    
-    
-
-        
-        //check if user is logged in, show updated account balance
-//        if ((PFUser.currentUser()) != nil) {
-//            
-//        }
-        
-
     }
-    
+
     @IBAction func cancelButtonPressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }

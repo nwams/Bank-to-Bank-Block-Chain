@@ -6,59 +6,29 @@ Parse.Cloud.define("hello", function(request, response) {
     response.success("Hello world!");
 });
 
-// sum up all transactions for each user, to get account balance
-//Parse.Cloud.define("addTransactions", function(request, response) {
-//
-//    var queryTrans = new Parse.Query("Transactions");
-//    var queryUser = new Parse.Query("User");
-//
-//    var balance = User.get("balance");
-//
-//    queryUser.equalTo("username", request.params.username);
-//
-//    queryTrans.equalTo("username", request.params.username);
-//
-//    queryTrans.find({
-//    success: function(results) {
-//      var sum = 0;
-//      for (var i = 0; i < results.length; ++i) {
-//        sum += results[i].get("amount");
-//          //how to get user $15000 then subtract sum?
-//      }
-//      response.success(balance - sum);
-//    },
-//    error: function() {
-//      response.error("user transaction lookup failed");
-//    }
-//  });
-//});
-
-
-// sum up all transactions for each user, to get account balance
-Parse.Cloud.define("addTransactions", function(request, response) {
-
-    var User = Parse.object.extend("User")
-    var query = new Parse.Query("Transactions");
-
-    var queryUser = new Parse.Query("User");
-
-    var balance = User.get("balance");
-
-    queryUser.equalTo("username", request.params.username);
-
-    query.equalTo("username", request.params.username);
-
-    query.find({
-    success: function(results) {
-      var sum = 0;
-      for (var i = 0; i < results.length; ++i) {
-        sum += results[i].get("amount");
-          //how to get user $15000 then subtract sum?
-      }
-      response.success(balance - sum);
-    },
-    error: function() {
-      response.error("user transaction lookup failed");
-    }
-  });
+//TWILIO
+Parse.Cloud.define("twilio", function(request, response) {
+	// Require and initialize the Twilio module with your credentials
+	var client = require('twilio')('AC47d7f1298aba32a48efcf711a5ca990d', 'f039329073ef926596d2a28695f0bb03');
+	var receiverPhone = request.params.receiverPhone
+	var userFirstName = request.params.userFirstName
+	var userLastName = request.params.userLastName
+	var receiverFirstName = request.params.receiverFirstName
+	var amount = request.params.amount
+	
+	// Send an SMS message
+	client.sendSms({
+		to: receiverPhone,
+		from: '+18324314448',
+		body: 'Hi'
+	  }, function(err, responseData) {
+		if (err) {
+		  console.log(err);
+		} else {
+		  console.log(responseData.from);
+		  console.log(responseData.body);
+		}
+	  }
+);
 });
+

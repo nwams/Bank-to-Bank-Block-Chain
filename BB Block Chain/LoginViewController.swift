@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NSUserDefaults.standardUserDefaults().setObject("2813308004", forKey: "userMobilePhone")
+        NSUserDefaults.standardUserDefaults().setObject("8325418199", forKey: "userMobilePhone")
         NSUserDefaults.standardUserDefaults().synchronize()
     }
 

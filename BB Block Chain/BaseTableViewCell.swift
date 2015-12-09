@@ -12,6 +12,7 @@ import ParseUI
 
 class BaseTableViewCell: PFTableViewCell {
 
+    // parameters to display in table view
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var receiverLabel: UILabel!
     @IBOutlet weak var amountLabel: UILabel!
