@@ -108,29 +108,22 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
                     subTitle: "$" + sendAmount! + " sent to " + receiverfirstName! + " " + receiverLastName!,
                     colorStyle: 0x43CAA7,
                     colorTextButton: 0xFFFFFF)
-                let receiverPhoneC = "+1" + String(receiverMobileNumber!)
                 
-//                // prefix country code +1
-//                let transDict: [NSObject : AnyObject]! = [
-//                    "receiverPhoneC": "+1" + String(receiverMobileNumber!),
-//                    "userFirstName": userFirstName!,
-//                    "userLastName": userLastName!,
-//                    "amount": sendAmount!,
-//                    "receiverFirstName": receiverfirstName!
-//                ]
-//                print(transDict)
-//                // call twilio js
-//                PFCloud.callFunctionInBackground("twilio", withParameters: transDict) { (result: AnyObject?, error: NSError?) in
-//                    let getBack = result as? NSObject
-//                    print(getBack)
-//                }
+                // TWILIO text message notifications
                 let user = PFUser.currentUser()
                 print ("PHONE", "+1" + String(user!.objectForKey("mobile_phone")!))
                 print ("SENDER NAME", user!.objectForKey("firstname")!)
                 
-                let phone = "+1" + String(user!.objectForKey("mobile_phone")!)
+                var messageDetails: [String: String] = [
+                    "receiverfirstName": receiverfirstName!,
+                    "sendAmount": sendAmount!,
+                    "senderFirstName": user!.objectForKey("firstname")! as! String,
+                    "senderLastName": user!.objectForKey("lastname")! as! String,
+                    "receiverPhoneC": "+1" + String(receiverMobileNumber!)
+                ]
                 
-                PFCloud.callFunctionInBackground("twilio", withParameters: ["receiverPhone":phone]) { (result: AnyObject?, error: NSError?) in
+                // call twilio js function from main.js
+                PFCloud.callFunctionInBackground("twilio", withParameters: messageDetails) { (result: AnyObject?, error: NSError?) in
                     let getBack = result as? NSObject
                     print(getBack)
                 }
