@@ -16,16 +16,35 @@ class AccountBalanceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()        
         // display updated user account balance
-        let currentUser = PFUser.currentUser()
-        currentUser!.fetchInBackgroundWithBlock { (object, error) -> Void in
-            currentUser!.fetchIfNeededInBackgroundWithBlock { (result, error) -> Void in
-                // get rid of Optional print by using if let
-                if let usrBalance = currentUser!.objectForKey("balance"){
-                    let usrBal = usrBalance
+        
+        let query = PFQuery(className:"User")
+        query.getObjectInBackgroundWithId("DUlGSvYtCF") {
+            (blockUser: PFObject?, error: NSError?) -> Void in
+            if error == nil && blockUser != nil {
+                print(blockUser)
+                if let userBalance = blockUser!["balance"]{
+                    let usrBal = userBalance
                     self.accountBalance.text = "$" + String(usrBal)
                 }
+                //let balance = blockUser!["balance"] as! String
+
+            } else {
+                print(error)
             }
         }
+        
+        
+//        let currentUser = PFUser.currentUser()
+//        
+//        currentUser!.fetchInBackgroundWithBlock { (object, error) -> Void in
+//            currentUser!.fetchIfNeededInBackgroundWithBlock { (result, error) -> Void in
+//                // get rid of Optional print by using if let
+//                if let usrBalance = currentUser!.objectForKey("balance"){
+//                    let usrBal = usrBalance
+//                    self.accountBalance.text = "$" + String(usrBal)
+//                }
+//            }
+//        }
     }
 
 

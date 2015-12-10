@@ -9,6 +9,7 @@
 import UIKit
 import SCLAlertView
 import Parse
+import Alamofire
 
 class ConfirmViewController: UIViewController, UITableViewDataSource {
     
@@ -114,7 +115,7 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
                 print ("PHONE", "+1" + String(user!.objectForKey("mobile_phone")!))
                 print ("SENDER NAME", user!.objectForKey("firstname")!)
                 
-                var messageDetails: [String: String] = [
+                let messageDetails: [String: String] = [
                     "receiverfirstName": receiverfirstName!,
                     "sendAmount": sendAmount!,
                     "senderFirstName": user!.objectForKey("firstname")! as! String,
@@ -122,7 +123,7 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
                     "receiverPhoneC": "+1" + String(receiverMobileNumber!)
                 ]
                 
-                // call twilio js function from main.js
+                // call twilio js function from15 main.js
                 PFCloud.callFunctionInBackground("twilio", withParameters: messageDetails) { (result: AnyObject?, error: NSError?) in
                     let getBack = result as? NSObject
                     print(getBack)
@@ -130,8 +131,27 @@ class ConfirmViewController: UIViewController, UITableViewDataSource {
             } else {
                 // There was a problem, check error.description
             }
-        }
-        
+            
+            // prep addresses for blockchain
+            let roberts = "1YKM2c3PWFGXK5pU7msNViFKnELgEnvDT5ahsA"
+            let nwams = "1MzkirbCMSaiTmm3z8XWAt4v8gGK3NrgLPkpY7"
+            let murata = "118K6VND8V9fFqCnjbN1xKuk9b4TJbaqppYxLa"
+            let jsp = "1Ykjusd1gjVb8qsHzMN1gyYbHo"
+            
+            let AMOUNTVALUE = sendAmount!
+            let SENDERADDRESS = "1MzkirbCMSaiTmm3z8XWAt4v8gGK3NrgLPkpY7"
+            let RECIPIENTADRESS = "118K6VND8V9fFqCnjbN1xKuk9b4TJbaqppYxLa"
+            
+            
+            // Send to blockchain
+            // Make HTTP request
+            
+            
+            let url = String("http://52.23.215.189:8000/?amt="+AMOUNTVALUE+"&sname="+SENDERADDRESS+"&rname="+RECIPIENTADRESS+"")
+            print ("URL=", url)
+            Alamofire.request(.GET, url)
+            
+            }
     }
 
     @IBAction func cancelButtonPressed(sender: AnyObject) {

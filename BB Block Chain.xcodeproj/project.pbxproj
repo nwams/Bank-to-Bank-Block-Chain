@@ -14,6 +14,7 @@
 		E82E264E1C0FA37B00A211DD /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF841BB9A57A00E6299A /* RegisterPageViewController.swift */; };
 		E8442C7C1BC5C2A3009CF92D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF861BBA10B800E6299A /* LoginViewController.swift */; };
 		E85F87D61BCCEE4400950401 /* launch_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = E85F87D51BCCEE4400950401 /* launch_pic.png */; };
+		E8657E7A1C19CF4900828C9A /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8657E791C19CF4900828C9A /* HTTP.swift */; };
 		E885BF451BB8C52400E6299A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF441BB8C52400E6299A /* AppDelegate.swift */; };
 		E885BF471BB8C52400E6299A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885BF461BB8C52400E6299A /* ViewController.swift */; };
 		E885BF4A1BB8C52400E6299A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E885BF481BB8C52400E6299A /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 		E81461471BC36617000FFD55 /* RecipientDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipientDetailsViewController.swift; sourceTree = "<group>"; };
 		E814614D1BC42957000FFD55 /* TextInputTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputTableViewController.swift; sourceTree = "<group>"; };
 		E85F87D51BCCEE4400950401 /* launch_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_pic.png; sourceTree = "<group>"; };
+		E8657E791C19CF4900828C9A /* HTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 		E885BF411BB8C52400E6299A /* BB Block Chain Chain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BB Block Chain Chain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E885BF441BB8C52400E6299A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E885BF461BB8C52400E6299A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				E8B4748C1C13972300DED65C /* AccountBalanceViewController.swift */,
 				E8A14A301C14C89D00BC6EC8 /* ObjectsTableViewController.swift */,
 				E8A14A321C14CADB00BC6EC8 /* BaseTableViewCell.swift */,
+				E8657E791C19CF4900828C9A /* HTTP.swift */,
 				E8A14A2E1C14130E00BC6EC8 /* Images.xcassets */,
 			);
 			path = "BB Block Chain";
@@ -458,6 +461,7 @@
 				E885BF451BB8C52400E6299A /* AppDelegate.swift in Sources */,
 				E89674271BC45058001FF398 /* ConfirmViewController.swift in Sources */,
 				E8E173391BBE22DD00E4577F /* TransferDetailsViewController.swift in Sources */,
+				E8657E7A1C19CF4900828C9A /* HTTP.swift in Sources */,
 				E885BF851BB9A57A00E6299A /* RegisterPageViewController.swift in Sources */,
 				E81461481BC36617000FFD55 /* RecipientDetailsViewController.swift in Sources */,
 				E8A14A331C14CADB00BC6EC8 /* BaseTableViewCell.swift in Sources */,

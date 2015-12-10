@@ -35,16 +35,33 @@ class TransferDetails2ViewController: UIViewController {
         continueButton.alpha = 0.5
         
         // display updated user account balance
-        let currentUser = PFUser.currentUser()
-        currentUser!.fetchInBackgroundWithBlock { (object, error) -> Void in
-            currentUser!.fetchIfNeededInBackgroundWithBlock { (result, error) -> Void in
-                // get rid of Optional print by using if let
-                if let usrBalance = currentUser!.objectForKey("balance"){
-                    let usrBal = usrBalance
+        
+        // display updated user account balance
+        
+        let query = PFQuery(className:"User")
+        query.getObjectInBackgroundWithId("DUlGSvYtCF") {
+            (blockUser: PFObject?, error: NSError?) -> Void in
+            if error == nil && blockUser != nil {
+                if let userBalance = blockUser!["balance"]{
+                    let usrBal = userBalance
                     self.accountBalance.text = "$" + String(usrBal)
-                }
+                }                
+            } else {
+                print(error)
             }
         }
+
+        
+//        let currentUser = PFUser.currentUser()
+//        currentUser!.fetchInBackgroundWithBlock { (object, error) -> Void in
+//            currentUser!.fetchIfNeededInBackgroundWithBlock { (result, error) -> Void in
+//                // get rid of Optional print by using if let
+//                if let usrBalance = currentUser!.objectForKey("balance"){
+//                    let usrBal = usrBalance
+//                    self.accountBalance.text = "$" + String(usrBal)
+//                }
+//            }
+//        }
     }
 
     

@@ -74,7 +74,7 @@ class RegisterPageViewController: UIViewController {
             newUser.password = userPassword
             newUser.email = userEmail
             newUser["mobile_phone"] = "8325418199"
-            newUser["balance"] = 15000.00
+            newUser["balance"] = 30000.00
             
             // sign up the user asynchronously
             newUser.signUpInBackgroundWithBlock ({
