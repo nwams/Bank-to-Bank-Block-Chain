@@ -21,3 +21,17 @@ by a block chain.
 - A bank uses our API to have a secure, and easy traceable channel to instantly transfer money to another bank regardless of location.
 
 - A user can choose our service from a multitude of banks (instead of a wire transfer) to cheaply, quickly, and securely send money to anyone, anywhere.
+
+![alt tag](https://github.com/nwams/Bank-to-Bank-Block-Chain/blob/master/appPics/1%20string.PNG)
+
+![alt tag](https://github.com/nwams/Bank-to-Bank-Block-Chain/blob/master/appPics/2%20transfer.png)
+
+![alt tag](https://github.com/nwams/Bank-to-Bank-Block-Chain/blob/master/appPics/3%20balance.png)
+
+![alt tag](https://github.com/nwams/Bank-to-Bank-Block-Chain/blob/master/appPics/4%20amount.png)
+
+![alt tag](https://github.com/nwams/Bank-to-Bank-Block-Chain/blob/master/appPics/5%20confirm.png)
+
+![alt tag](https://github.com/nwams/Bank-to-Bank-Block-Chain/blob/master/appPics/6%20cograts.png)
+
+![alt tag](https://github.com/nwams/Bank-to-Bank-Block-Chain/blob/master/appPics/7%20ledger.png)
